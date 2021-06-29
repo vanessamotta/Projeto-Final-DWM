@@ -1,105 +1,375 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <link rel="stylesheet" href="resources/css/carrosel/carrosel.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Links -->
+  <link rel="stylesheet" href="resources/css/carrosel/carrosel.css">
+  <link rel="stylesheet" href="resources/css/menu.css">
+  <link rel="stylesheet" href="resources/css/card/card.css">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>4U!</title>
+  <title>4U!</title>
 </head>
+
 <body>
-  
+
   <header>
     <nav>
       <div class="menudenavegação">
-          <img class="logo" src="/resources/css/nav/logo.png" alt="logo da empresa 4U!">
-          <ul class="itensdomenu">
+        <img class="logo" src="resources/css/nav/logo.png" alt="logo da empresa 4U!" style="width: 50px;">
+        <!--
+           <ul class="itensdomenu">
             <li>Serviços</li>
             <li>Jobs</li>
             <li>Contato</li>
             <li>Cultura</li>
             <li>Vagas</li>
-          </ul>
+          </ul>  
+           -->
+      </div>
 
-      </div>          
-    </nav>
-
-    <section>
+      <!-- MENU HAMBURGUER -->
       <div class="container">
-        <div class="wall wall-1" id="wall-1">
-          <h1>carrosel numero - 1</h1>
+        <input type="checkbox" id="checkbox-menu">
+        <label for="checkbox-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="carrosel">
+      <div class="gallery">
+        <div class="gallery__prev"></div>
+        <div class="gallery__next"></div>
+        <div class="gallery__stream">
+          <div class="gallery__item bg-1"></div>
+          <div class="gallery__item bg-2"></div>
+          <div class="gallery__item bg-3"></div>
+          <div class="gallery__item bg-4"></div>
+          <div class="gallery__item bg-5"></div>
         </div>
-    
-        <div class="wall wall-2" id="wall-2">
-          <h1>carrosel numero - 2</h1>
-        </div>
-    
-        <div class="wall wall-3" id="wall-3">
-          <h1>carrosel numero - 3</h1>
-        </div>
+      </div>
     </section>
 
-  </header>
-  
-  <main class="main">
-    <!--<div class="item-section">-->
-      <img class="linhadecorativa" src="/resources/css/itemdecorativo/linha2.png" alt="linha decorativa roxa">
-      <h2 class="titulo-section">Serviços que oferecemos</h2>
-  <!--</div>-->
-  </main>
-  <section class="sanfona">
-    <!-- Accordeon -->
-    <div class="accordion" id="accordionExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            Design Digital
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+    <section class="servicos">
+      <div>
+        <img class="linhadecorativa" src="resources/css/itemdecorativo/linha2.png" alt="linha decorativa roxa"
+          style="width: 50px;">
+        <h2 class="titulo-section">Serviços que oferecemos</h2>
+      </div>
+      <div class="sanfona">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                Design Digital
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Softwares e Operações de TI
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Inovação
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTwo">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            Softwares e Operações de TI
-          </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-          </div>
-        </div>
+      <div>
+        <a class="botao-servicos" href="#"><button>Saiba mais</button></a>
       </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingThree">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            Inovação
-          </button>
-        </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-          </div>
-        </div>
-      </div>
-    </div>
-</div>
-  </section>
+    </section> 
 
-  
-  
+    <section class="jobs">
+      <div>
+        <img class="linhadecorativa" src="resources/css/itemdecorativo/linha1.png" alt="linha decorativa verde"
+          style="width: 50px;">
+        <h2 class="titulo-section">Jobs</h2>
+      </div>
+
+      <article>
+        <p>Aqui a gente não trabalha, nós nos divertimos! Por isso conquistamos um quadro de clientes tão ativo,
+          que só escolhe o que tem de melhor no mercado. Não se convenceu? Então confere aí!</p>
+      </article>
+
+      <div class="containercard">
+        <article class="card">
+          <div class="flip">
+            <section class="front-card">
+              <img src="resources/css/card/img/nubank.png" alt="Logotipo Nubank">
+            </section>
+            <section class="back-card">
+              <img src="resources/css/card/img/nubank-back.png" alt="Logotipo Nubank">
+            </section>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="flip">
+            <div class="front-card">
+              <img src="resources/css/card/img/warner.png" alt="Logotipo Warner Bros">
+            </div>
+            <div class="back-card">
+              <img src="resources/css/card/img/warner-back.png" alt="Logotipo Warner Bros">
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="flip">
+            <div class="front-card">
+              <img src="resources/css/card/img/netflix.jpg" alt="Logotipo Netflix">
+            </div>
+            <div class="back-card">
+              <img src="resources/css/card/img/netflix-back.jpg" alt="Logotipo Netflix">
+            </div>
+          </div>
+        </article>   
+        
+        <article class="card">
+          <div class="flip">
+            <section class="front-card">
+              <img src="resources/css/card/img/nubank.png" alt="Logotipo Nubank">
+            </section>
+            <section class="back-card">
+              <img src="resources/css/card/img/nubank-back.png" alt="Logotipo Nubank">
+            </section>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="flip">
+            <div class="front-card">
+              <img src="resources/css/card/img/warner.png" alt="Logotipo Warner Bros">
+            </div>
+            <div class="back-card">
+              <img src="resources/css/card/img/warner-back.png" alt="Logotipo Warner Bros">
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="flip">
+            <div class="front-card">
+              <img src="resources/css/card/img/netflix.jpg" alt="Logotipo Netflix">
+            </div>
+            <div class="back-card">
+              <img src="resources/css/card/img/netflix-back.jpg" alt="Logotipo Netflix">
+            </div>
+          </div>
+        </article>           
+      </div>  
+      <div>
+        <a class="botao-jobs" href="#"><button>Ver todos</button></a>
+      </div>
+    </section>  
+    
+    <section class="contato">
+      <div>
+        <img class="linhadecorativa" src="resources/css/itemdecorativo/linha2.png" alt="linha decorativa roxa"
+          style="width: 50px;">
+        <h2 class="titulo-section">Contato</h2>
+      </div>
+      <div>
+        <p class="texto-contato">
+          Gostou da gente? Manda teu alô!
+        </p>
+      </div>  
+      <div class="formulario">      
+        <form id="form-contato" method="post" action="recebe-dados.php">
+          <input class="input-form" type="text" name="nome" placeholder="Digite seu nome">
+          <input class="input-form" type="email" name="email" placeholder="Digite seu e-mail">
+          <input class="input-form" type="number" name="numero" min="11" placeholder="Digite seu nº de WhatsApp 00-000000000">
+          <textarea name="area-texto" id="" cols="30" rows="5" placeholder="Digite sua mensagem"></textarea>
+        </form>
+      </div>
+      <div>
+        <button class="btn-form" type="submit" name="btn-enviar" form="form-contato" value="enviar">Enviar</button></a>
+      </div>   
+      <div>
+        <h2>ASSINE NOSSA NEWSLETTER!</h2>
+        <P>
+          A gente jura que não vai lotar a sua caixa de e-mails!
+        </P>
+        <input class="newsletter" type="email" placeholder="Digite seu e-mail">
+        <button class="btn-newsletter" type="submit" value="enviar">Assinar</button>
+      </div> 
+    </section>
+
+    <section class="cultura">
+      <div>
+        <img class="linhadecorativa" src="resources/css/itemdecorativo/linha1.png" alt="linha decorativa verde"
+          style="width: 50px;">
+        <h2 class="titulo-section">Cultura</h2>
+      </div>
+      <article>
+        <p>A cultura significa o que as pessoas que fazem a 
+          empresa acontecer pensam, sentem e desejam. 
+          Tanto no âmbito profissional, quanto no pessoal. 
+          Ao definir a cultura, nos preocupamos em saber 
+          qual o propósito de todo o trabalho que fazemos. 
+          Pois sabendo o nosso propósito aqui, seremos
+          muito mais certeiros ao manter nossos colaboradores 
+          confortáveis e acolhidos. Para isso, definimos 3 pilares 
+          de conceitos que devem estar no DNA de todos que 
+          trabalham aqui:</p>
+      </article>
+      <div>
+        <p class="cultura-topicos">1. Humanização</p>
+        <p class="cultura-topicos">2. Inteligência</p>
+        <p class="cultura-topicos">3. Sustentabilidade</p>
+      </div>
+      <button class="saiba-mais">Saiba mais</button>
+    </section>
+
+    <section>
+      <div class="titulo-section">
+        <img class="linhadecorativa" src="resources/css/itemdecorativo/linha2.png" alt="linha decorativa verde"
+          style="width: 50px;">
+        <h2 class="titulo-section">Vagas</h2>
+      </div>
+      <div class="opcoes-vagas">
+        <input id="opcoes-vagas" placeholder="Tipo de vaga">
+        <ion-icon name="chevron-down-outline"></ion-icon>
+      </div>
+      <div class="opcoes-vagas">
+        <input id="opcoes-vagas" placeholder="Área">
+        <ion-icon name="chevron-down-outline"></ion-icon>
+      </div>
+      <div class="opcoes-vagas">
+        <input id="opcoes-vagas" placeholder="Localização">
+        <ion-icon name="chevron-down-outline"></ion-icon>
+      </div>
+
+
+      <div class="planilha-vagas">
+        <table>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="coluna-oportunidades">Analista de RH</td>
+            <td class="coluna numero-vagas">1</td>
+            <td class="coluna-tipo-vaga">Efetivo</td>
+          </tr>
+          <tr>
+            <td class="coluna-oportunidades">Psicóloga</td>
+            <td class="coluna numero-vagas">3</td>
+            <td class="coluna-tipo-vaga">Efetivo</td>
+          </tr>
+          <tr>
+            <td class="coluna-oportunidades">Facilidatora TI</td>
+            <td class="coluna numero-vagas">5</td>
+            <td class="coluna-tipo-vaga">Efetivo</td>
+          </tr>
+          <tr>
+            <td class="coluna-oportunidades">Designer</td>
+            <td class="coluna numero-vagas">3</td>
+            <td class="coluna-tipo-vaga">Efetivo</td>
+          </tr>
+          <tr>
+            <td class="coluna-oportunidades">UX Designer</td>
+            <td class="coluna numero-vagas">4</td>
+            <td class="coluna-tipo-vaga">Estágio</td>
+          </tr>
+          <tr>
+            <td class="coluna-oportunidades">UI Designer</td>
+            <td class="coluna numero-vagas">4</td>
+            <td class="coluna-tipo-vaga">Estágio</td>
+          </tr>
+          <tr>
+            <td class="coluna-oportunidades">Desenvolvedor</td>
+            <td class="coluna numero-vagas">5</td>
+            <td class="coluna-tipo-vaga">Estágio</td>
+          </tr>
+          
+        </table>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div>
+      <address>Rua Cel. Genuíno, 358 - Centro Histórico</address>
+      <address>Porto Alegre - RS, 90010-350</address>
+    </div>
+    <div class="redes-sociais">
+      <img src="" alt="logotipo instagram">
+      <img src="" alt="logotipo facebook">
+      <img src="" alt="logotipo github">
+      <img src="" alt="logotipo whatsapp">
+      <img src="" alt="logotipo youtube">
+    </div>
+    <p class="direitos-autorias">&copy; Todos os direitos reservados 4U!</p>
+  </footer>
+
+
+
+
+
+
+
+
+
 
   <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
-  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+  <script src="resources/css/carrosel/carrosel.js"></script>
 </body>
+
 </html>
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">

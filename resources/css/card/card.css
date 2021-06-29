@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.containercard{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    position: relative;
+    height: 180px;
+    width: 277px;
+    margin: 20px;
+    perspective: 1000px;   
+}
+
+.card .flip{
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .flip{
+    transform: rotateY(180deg);
+}
+
+.front-card, .back-card{
+    position: absolute;
+    backface-visibility: hidden;
+
+}
+
+.back-card{
+    transform: rotateY(180deg);
+}
+
+.front-card img, .back-card img{
+    border-radius:  12px;
+    box-shadow: 0 0 8px 0 rgba(0,0,0, 0.3);    
+}
