@@ -94,21 +94,21 @@
   /* Backgrounds */
 
 .bg-1 {
-    background-image: url(img/imagem-1.jpg);
+    background-image: url(img/c1.jpg);
   }
 .bg-2 {
-    background-image: url(img/imagem-2.jpg);
+    background-image: url(img/c2.jpg);
 }  
 .bg-3 {
-    background-image: url(img/imagem-3.jpg);
+    background-image: url(img/c3.jpg);
 }
 
 .bg-4 {
-    background-image: url(img/imagem-4.jpg);
+    background-image: url(img/c4.jpg);
 }
 
 .bg-5 {
-    background-image: url(img/imagem-5.jpg);
+    background-image: url(img/c5.jpg);
 }
 
 /* Controles */
