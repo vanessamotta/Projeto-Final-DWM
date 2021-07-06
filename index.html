@@ -7,44 +7,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Links -->
   <link rel="stylesheet" href="resources/css/carrosel/carrosel.css">
-  <link rel="stylesheet" href="resources/css/menu.css">
-  <link rel="stylesheet" href="resources/css/card/card.css">
+  <link rel="stylesheet" href="resources/css/menu/menu1.css">  
+  <link rel="stylesheet" href="resources/css/estilos/estilos.css">
+  <link rel="stylesheet" href="resources/css/accordion/accordion.css">
+  <link rel="stylesheet" href="resources/css/galeria/galeria.css">
+  <link rel="stylesheet" href="resources/css/galeria/img">
 
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
   <title>4U!</title>
 </head>
 
 <body>
 
-  <header>
+  <header>   
     <nav>
-      <div class="menudenavegação">
-        <img class="logo" src="resources/css/nav/logo.png" alt="logo da empresa 4U!" style="width: 50px;">
-        <!--
-           <ul class="itensdomenu">
-            <li>Serviços</li>
-            <li>Jobs</li>
-            <li>Contato</li>
-            <li>Cultura</li>
-            <li>Vagas</li>
-          </ul>  
-           -->
+      <a class="logo" href="#">4U!</a>
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
       </div>
-
-      <!-- MENU HAMBURGUER -->
-      <div class="container">
-        <input type="checkbox" id="checkbox-menu">
-        <label for="checkbox-menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-      </div>
+      <ul class="nav-list" style="z-index: 4;">
+        <li><a href="#">Quem Somos</a></li>
+        <li><a href="#">Cultura</a></li>
+        <li><a href="#">Vagas</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
     </nav>
   </header>
-
+  
   <main>
     <section class="carrosel">
       <div class="gallery">
@@ -59,200 +52,145 @@
         </div>
       </div>
     </section>
+    
+    <section>
+      <div class="servicos">
+        <img class="linhadecorativa" src="resources/css/itemdecorativo/linha2.png" alt="linha decorativa roxa">
+        <h2 class="servicos-section">Serviços que oferecemos</h2>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="check1">
+        <label for="check1">Design Digital</label>
+        <ul>
+          <li><a href="#">Projetos</a></li>
+          <li><a href="#">Veja mais</a></li>
+        </ul>
+      </div>
 
-    <section class="servicos">
-      <div>
-        <img class="linhadecorativa" src="resources/css/itemdecorativo/linha2.png" alt="linha decorativa roxa"
-          style="width: 50px;">
-        <h2 class="titulo-section">Serviços que oferecemos</h2>
+      <div class="item">
+        <input type="checkbox" id="check2">
+        <label for="check2">Softwares e Operações de TI</label>
+        <ul>
+          <li><a href="#">Projetos</a></li>
+          <li><a href="#">Veja mais</a></li>
+        </ul>
       </div>
-      <div class="sanfona">
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                aria-expanded="true" aria-controls="collapseOne">
-                Design Digital
-              </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-              data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
-                plugin adds the appropriate classes that we use to style each element. These classes control the overall
-                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
-                within the <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Softwares e Operações de TI
-              </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-              data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
-                plugin adds the appropriate classes that we use to style each element. These classes control the overall
-                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
-                within the <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Inovação
-              </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-              data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
-                plugin adds the appropriate classes that we use to style each element. These classes control the overall
-                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
-                within the <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
+      <div class="item">
+        <input type="checkbox" id="check3">
+        <label for="check3">Tecnologia e Inovação</label>
+        <ul>
+          <li><a href="#">Projetos</a></li>
+          <li><a href="#">Veja mais</a></li>
+        </ul>
+      </div>       
+
+      <div class="botao">
         <a class="botao-servicos" href="#"><button>Saiba mais</button></a>
       </div>
     </section> 
 
-    <section class="jobs">
-      <div>
-        <img class="linhadecorativa" src="resources/css/itemdecorativo/linha1.png" alt="linha decorativa verde"
-          style="width: 50px;">
-        <h2 class="titulo-section">Jobs</h2>
+    <section >
+      <div class="jobs">
+        <img class="linhadecorativa" src="resources/css/itemdecorativo/linha1.png" alt="linha decorativa verde">
+        <h2 class="jobs-section">Jobs</h2>
       </div>
 
-      <article>
-        <p>Aqui a gente não trabalha, nós nos divertimos! Por isso conquistamos um quadro de clientes tão ativo,
+      <article class="jobs-article">
+        <p class="jobs-text">Aqui a gente não trabalha, nós nos divertimos! Por isso conquistamos um quadro de clientes tão ativo,
           que só escolhe o que tem de melhor no mercado. Não se convenceu? Então confere aí!</p>
       </article>
+      
+      <div class="galeria">
+        <div class="single-galeria wg2 hg2">
+          <div class="img">
+            <img src="resources/css/galeria/img/ifoof.jpg" alt="logotipo ifood">
+          </div>
+          <div class="overflow"></div>
+          <div class="conteudo">            
+            <p>Projeto realizado <br> para <b>ifood</b></p>
+          </div>
+        </div>
 
-      <div class="containercard">
-        <article class="card">
-          <div class="flip">
-            <section class="front-card">
-              <img src="resources/css/card/img/nubank.png" alt="Logotipo Nubank">
-            </section>
-            <section class="back-card">
-              <img src="resources/css/card/img/nubank-back.png" alt="Logotipo Nubank">
-            </section>
+        <div class="single-galeria wg2">
+          <div class="img">
+            <img src="resources/css/galeria/img/avon.jpg" alt="logotipo avon">
           </div>
-        </article>
+          <div class="overflow"></div>
+          <div class="conteudo">            
+            <p>Projeto realizado <br> para <b>avon</b></p>
+          </div>
+        </div>
 
-        <article class="card">
-          <div class="flip">
-            <div class="front-card">
-              <img src="resources/css/card/img/warner.png" alt="Logotipo Warner Bros">
-            </div>
-            <div class="back-card">
-              <img src="resources/css/card/img/warner-back.png" alt="Logotipo Warner Bros">
-            </div>
+        <div class="single-galeria">
+          <div class="img">
+            <img src="resources/css/galeria/img/dhl.png" alt="logotipo dhl">
           </div>
-        </article>
+          <div class="overflow"></div>
+          <div class="conteudo">            
+            <p>CProjeto realizado <br> para <b>dhl</b></p>
+          </div>
+        </div>
 
-        <article class="card">
-          <div class="flip">
-            <div class="front-card">
-              <img src="resources/css/card/img/netflix.jpg" alt="Logotipo Netflix">
-            </div>
-            <div class="back-card">
-              <img src="resources/css/card/img/netflix-back.jpg" alt="Logotipo Netflix">
-            </div>
+        <div class="single-galeria">
+          <div class="img">
+            <img src="resources/css/galeria/img/disney.jpg" alt="logotipo disney">
           </div>
-        </article>   
-        
-        <article class="card">
-          <div class="flip">
-            <section class="front-card">
-              <img src="resources/css/card/img/nubank.png" alt="Logotipo Nubank">
-            </section>
-            <section class="back-card">
-              <img src="resources/css/card/img/nubank-back.png" alt="Logotipo Nubank">
-            </section>
+          <div class="overflow"></div>
+          <div class="conteudo">           
+            <p>Projeto realizado <br> para <b>disney</b></p>
           </div>
-        </article>
-
-        <article class="card">
-          <div class="flip">
-            <div class="front-card">
-              <img src="resources/css/card/img/warner.png" alt="Logotipo Warner Bros">
-            </div>
-            <div class="back-card">
-              <img src="resources/css/card/img/warner-back.png" alt="Logotipo Warner Bros">
-            </div>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="flip">
-            <div class="front-card">
-              <img src="resources/css/card/img/netflix.jpg" alt="Logotipo Netflix">
-            </div>
-            <div class="back-card">
-              <img src="resources/css/card/img/netflix-back.jpg" alt="Logotipo Netflix">
-            </div>
-          </div>
-        </article>           
-      </div>  
-      <div>
-        <a class="botao-jobs" href="#"><button>Ver todos</button></a>
+        </div>  
+        <div class="botao">
+          <a class="botao-jobs" href="#"><button>Ver todos</button></a>
+        </div>
+            
       </div>
-    </section>  
+    </section> 
     
-    <section class="contato">
-      <div>
-        <img class="linhadecorativa" src="resources/css/itemdecorativo/linha2.png" alt="linha decorativa roxa"
-          style="width: 50px;">
-        <h2 class="titulo-section">Contato</h2>
+    <section >
+      <div class="contato">
+        <img class="linhadecorativa" src="resources/css/itemdecorativo/linha2.png" alt="linha decorativa roxa">
+        <h2 class="contato-section">Contato</h2>
       </div>
-      <div>
+      <article class="contato-article">
         <p class="texto-contato">
           Gostou da gente? Manda teu alô!
         </p>
-      </div>  
+      </article>  
+
       <div class="formulario">      
         <form id="form-contato" method="post" action="recebe-dados.php">
-          <input class="input-form" type="text" name="nome" placeholder="Digite seu nome">
-          <input class="input-form" type="email" name="email" placeholder="Digite seu e-mail">
-          <input class="input-form" type="number" name="numero" min="11" placeholder="Digite seu nº de WhatsApp 00-000000000">
-          <textarea name="area-texto" id="" cols="30" rows="5" placeholder="Digite sua mensagem"></textarea>
+          <input class="input-form" type="text" name="nome" placeholder=" Digite seu nome">
+          <input class="input-form" type="email" name="email" placeholder=" Digite seu e-mail">
+          <input class="input-form" type="number" name="numero" min="11" placeholder=" Digite seu WhatsApp (00-12345-6789)">
+          <textarea class="textarea" name="area-texto" id="" cols="30" rows="5" placeholder=" Digite sua mensagem"></textarea>
         </form>
       </div>
-      <div>
-        <button class="btn-form" type="submit" name="btn-enviar" form="form-contato" value="enviar">Enviar</button></a>
+      <div class="botao">
+        <a class="botao-form" href="#"><button>Enviar</button></a>
       </div>   
       <div>
-        <h2>ASSINE NOSSA NEWSLETTER!</h2>
-        <P>
+        <h3 class="news">ASSINE NOSSA NEWSLETTER!</h3>
+        <P class="news-text">
           A gente jura que não vai lotar a sua caixa de e-mails!
-        </P>
-        <input class="newsletter" type="email" placeholder="Digite seu e-mail">
-        <button class="btn-newsletter" type="submit" value="enviar">Assinar</button>
+        </P>       
+        <form>
+          <input class="newsletter" type="email" placeholder=" Digite seu e-mail">
+                    
+          <div>
+            <button class="botao-newsletter" type="submit" value="enviar">Assinar</button>
+          </div>          
+        </form>    
       </div> 
     </section>
 
-    <section class="cultura">
-      <div>
-        <img class="linhadecorativa" src="resources/css/itemdecorativo/linha1.png" alt="linha decorativa verde"
-          style="width: 50px;">
-        <h2 class="titulo-section">Cultura</h2>
+    <section>
+      <div class="cultura">
+        <img class="linhadecorativa" src="resources/css/itemdecorativo/linha1.png" alt="linha decorativa verde">
+        <h2 class="cultura-section">Cultura</h2>
       </div>
-      <article>
-        <p>A cultura significa o que as pessoas que fazem a 
+      <article class="cultura-article">
+        <p class="cultura-text">A cultura significa o que as pessoas que fazem a 
           empresa acontecer pensam, sentem e desejam. 
           Tanto no âmbito profissional, quanto no pessoal. 
           Ao definir a cultura, nos preocupamos em saber 
@@ -263,34 +201,41 @@
           de conceitos que devem estar no DNA de todos que 
           trabalham aqui:</p>
       </article>
-      <div>
-        <p class="cultura-topicos">1. Humanização</p>
-        <p class="cultura-topicos">2. Inteligência</p>
-        <p class="cultura-topicos">3. Sustentabilidade</p>
+      <div class="topicos-cultura">
+        <p class="topicos-text">1. Humanização</p>
+        <p class="topicos-text">2. Inteligência</p>
+        <p class="topicos-text">3. Sustentabilidade</p>
       </div>
-      <button class="saiba-mais">Saiba mais</button>
+      <div>
+        <button class="saiba-mais">Saiba mais</button>
+      </div>
+      
     </section>
 
     <section>
-      <div class="titulo-section">
-        <img class="linhadecorativa" src="resources/css/itemdecorativo/linha2.png" alt="linha decorativa verde"
-          style="width: 50px;">
-        <h2 class="titulo-section">Vagas</h2>
-      </div>
-      <div class="opcoes-vagas">
-        <input id="opcoes-vagas" placeholder="Tipo de vaga">
-        <ion-icon name="chevron-down-outline"></ion-icon>
-      </div>
-      <div class="opcoes-vagas">
-        <input id="opcoes-vagas" placeholder="Área">
-        <ion-icon name="chevron-down-outline"></ion-icon>
-      </div>
-      <div class="opcoes-vagas">
-        <input id="opcoes-vagas" placeholder="Localização">
-        <ion-icon name="chevron-down-outline"></ion-icon>
+      <div class="vagas">
+        <img class="linhadecorativa" src="resources/css/itemdecorativo/linha2.png" alt="linha decorativa verde">
+        <h2 class="vagas-section">Vagas</h2>
       </div>
 
+      <select class="tipo-vaga">
+        <option class="vaga-option" value="vaga"> Tipo de vaga</option> 
+        <option class="vaga-option" value="estagio"> Estágio</option> 
+        <option value="temporario"> Temporário</option> 
+        <option value="clt"> CLT</option> 
+        <option value="pj"> PJ</option> 
+        <option value="presencial"> Presencial</option> 
+        <option value="remoto"> Remoto</option> 
+      </select>
 
+      <select class="tipo-area">
+        <option value="rh"> Recursos Humanos</option> 
+        <option value="financeiro"> Financeiro</option> 
+        <option value="desenvolvimento"> Desenvolvimento</option> 
+        <option value="recepção"> Recepção</option> 
+        <option value="compras"> Compras</option>         
+      </select>
+         
       <div class="planilha-vagas">
         <table>
           <tr>
@@ -300,37 +245,37 @@
           </tr>
           <tr>
             <td class="coluna-oportunidades">Analista de RH</td>
-            <td class="coluna numero-vagas">1</td>
+            <td class="coluna-numero-vagas">1</td>
             <td class="coluna-tipo-vaga">Efetivo</td>
           </tr>
           <tr>
             <td class="coluna-oportunidades">Psicóloga</td>
-            <td class="coluna numero-vagas">3</td>
+            <td class="coluna-numero-vagas">3</td>
             <td class="coluna-tipo-vaga">Efetivo</td>
           </tr>
           <tr>
             <td class="coluna-oportunidades">Facilidatora TI</td>
-            <td class="coluna numero-vagas">5</td>
+            <td class="coluna-numero-vagas">5</td>
             <td class="coluna-tipo-vaga">Efetivo</td>
           </tr>
           <tr>
             <td class="coluna-oportunidades">Designer</td>
-            <td class="coluna numero-vagas">3</td>
+            <td class="coluna-numero-vagas">3</td>
             <td class="coluna-tipo-vaga">Efetivo</td>
           </tr>
           <tr>
             <td class="coluna-oportunidades">UX Designer</td>
-            <td class="coluna numero-vagas">4</td>
+            <td class="coluna-numero-vagas">4</td>
             <td class="coluna-tipo-vaga">Estágio</td>
           </tr>
           <tr>
             <td class="coluna-oportunidades">UI Designer</td>
-            <td class="coluna numero-vagas">4</td>
+            <td class="coluna-numero-vagas">4</td>
             <td class="coluna-tipo-vaga">Estágio</td>
           </tr>
           <tr>
             <td class="coluna-oportunidades">Desenvolvedor</td>
-            <td class="coluna numero-vagas">5</td>
+            <td class="coluna-numero-vagas">5</td>
             <td class="coluna-tipo-vaga">Estágio</td>
           </tr>
           
@@ -340,17 +285,20 @@
   </main>
   <footer>
     <div>
+      <br>
       <address>Rua Cel. Genuíno, 358 - Centro Histórico</address>
       <address>Porto Alegre - RS, 90010-350</address>
     </div>
+    <!--
     <div class="redes-sociais">
       <img src="" alt="logotipo instagram">
       <img src="" alt="logotipo facebook">
       <img src="" alt="logotipo github">
       <img src="" alt="logotipo whatsapp">
       <img src="" alt="logotipo youtube">
-    </div>
+    </div>-->
     <p class="direitos-autorias">&copy; Todos os direitos reservados 4U!</p>
+    <br>
   </footer>
 
 
@@ -363,13 +311,14 @@
 
 
   <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-  </script>
-  <script src="resources/css/carrosel/carrosel.js"></script>
+  </script>-->
+  <script src="resources/css/carrosel/carrosel.js"></script> 
+  <script src="resources/css/menu/mobile-navbar.js"></script>
 </body>
 
 </html>
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">-->

@@ -1,0 +1,610 @@
+* {
+    margin: 0;
+    padding: 0;   
+}
+
+.linhadecorativa{
+    width: 30px;
+    margin-left: 260px;    
+}
+
+@media (max-width: 999px){
+    .linhadecorativa {
+      margin-left: 0px;
+    }    
+}
+
+
+/* ----------- seção serviços -------------- */
+
+.servicos{
+    margin-top: 550px;
+}
+
+@media (max-width: 999px){
+    .servicos {
+      margin-top: 150px;
+    }    
+}
+
+.servicos-section{
+    color:#7b20b8;    
+    display: flex;
+    margin: -26px 0 0 300px;
+}
+
+@media (max-width: 999px){
+    .servicos-section {
+      width: 350px; 
+      margin-left: 40px;  
+    }    
+}
+
+.botao-servicos button{
+    border-radius: 10px;
+    background-color: #B362E9;
+    color: white;
+    width: 100px;
+    border-style: none;
+    height: 25px;  
+    font-weight: bold;    
+    margin: 30px 400px 0 0;
+    float: right;
+}
+
+@media (max-width: 999px){
+    .botao-servicos button {
+      margin: 30px 35px 0 0;
+      float: right;
+    }    
+}
+
+
+/* ----------- seção jobs --------------*/
+
+.jobs{
+    margin-top: 120px;
+}
+
+@media (max-width: 999px){
+    .jobs {
+        margin-top: 70px;
+    }    
+}
+
+.jobs-article{
+    width: 950px;
+    margin-left: 300px;
+}
+
+.jobs-section{
+    color: #00D42A;
+    display: flex;
+    margin: -22px 0 0 300px;
+}
+
+@media (max-width: 999px){
+    .jobs-section {
+      width: 350px; 
+      margin-left: 40px;  
+    }    
+}
+
+.jobs-text{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 22px;
+    color: #707070;
+    margin-top: 10px;
+}
+
+@media (max-width: 999px){
+    .jobs-text {
+      width: 345px; 
+      margin-left: -285px;  
+      font-size: 18px;
+    }    
+}
+
+.botao-jobs button{
+    border-radius: 10px;
+    background-color: #00d42a;
+    color: white;
+    width: 100px;
+    border-style: none;
+    height: 25px;  
+    font-weight: bold;    
+    margin: 30px 400px 0 0;    
+}
+
+@media (max-width: 999px){
+    .botao-jobs button {
+      margin-left: 235px;
+    }    
+}
+
+/* ----------- seção contato --------------*/
+
+.contato{
+    margin-top: 650px;
+}
+
+@media (max-width: 999px){
+    .contato {
+      margin-top: 720px;
+    }    
+}
+
+.contato-section{
+    color:#7b20b8;    
+    display: flex;
+    margin: -26px 0 0 300px;
+}
+
+@media (max-width: 999px){
+    .contato-section {
+      width: 350px; 
+      margin-left: 40px;        
+    }    
+}
+
+.contato-article{
+    width: 900px;
+    margin-left: 300px;
+}
+
+.texto-contato{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 22px;
+    color: #707070;
+    margin-top: 10px;
+}
+
+@media (max-width: 999px){
+    .texto-contato {
+        width: 345px;
+        margin-left: -285px;
+        font-size: 18px;        
+    }    
+}
+
+input{
+    display: block;
+    margin: 20px 0 0 300px;
+}
+
+@media (max-width: 999px){
+    input {        
+        margin: 20px 0 0 15px;       
+    }    
+}
+
+.input-form{
+    background-color: #E9E9E9;
+    border-radius: 5px;
+    border-style: none;
+    width: 900px;
+    height: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
+
+@media (max-width: 999px){
+    .input-form {
+        width: 340px;       
+        font-size: 18px;      
+    }    
+}
+
+.textarea{
+    background-color: #E9E9E9;
+    border-radius: 5px;
+    border-style: none;
+    width: 900px;
+    height: 200px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    display: block;
+    margin: 20px 0 0 300px;
+}
+
+@media (max-width: 999px){
+    .textarea {
+        width: 340px;       
+        font-size: 18px; 
+        margin: 20px 0 0 15px; 
+        height: 100px;    
+    }    
+}
+
+.botao-form button{
+    border-radius: 10px;
+    background-color: #B362E9;
+    color: white;
+    width: 100px;
+    border-style: none;
+    height: 25px;  
+    font-weight: bold;
+    margin: 15px 415px 0 0;
+    float: right;
+}
+
+@media (max-width: 999px){
+    .botao-form button {
+      margin: 30px 35px 0 0;
+      float: right;
+    }    
+}
+
+.news{
+    color: #707070;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 20px;
+    margin: 100px 0 0 300px;
+    width: 900px;
+}
+
+@media (max-width: 999px){
+    .news {
+        font-size: 18px; 
+        margin: 40px 0 0 15px; 
+    }    
+}
+
+.news-text{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 22px;
+    color: #707070;
+    margin: 10px 0 0 300px;
+}
+
+@media (max-width: 999px){
+    .news-text {
+        width: 330px;
+        font-size: 18px; 
+        margin: 20px 0 0 15px; 
+    }    
+}
+
+.newsletter{
+    border-radius: 5px;
+    border: 3px solid;
+    border-color: #B362E9;
+    width: 600px;
+    height: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;     
+}
+
+@media (max-width: 999px){
+    .newsletter {
+        width: 200px;
+        height: 25px;
+        font-size: 16px; 
+        margin: 20px 0 0 15px; 
+    }    
+}
+
+.botao-newsletter{
+    border-radius: 10px;
+    background-color: #B362E9;
+    color: white;
+    width: 100px;
+    border-style: none;
+    height: 25px;  
+    font-weight: bold;
+    margin: -25px 415px 0 0;
+    float: right;
+}
+
+@media (max-width: 999px){
+    .botao-newsletter{
+      margin-left: 235px;
+      width: 100px;
+      margin: -25px 40px 0 0;
+    }    
+}
+
+form .newsletter {
+    overflow: hidden;
+    padding: 0 3px 0 0;
+}
+
+
+/* ----------- seção contato --------------*/
+
+.cultura{
+    margin-top: 100px;
+}
+
+@media (max-width:999px) {
+    .cultura{
+        margin-top: 50px;
+    }    
+}
+
+.cultura-section{
+    color: #00D42A;
+    display: flex;
+    margin: -27px 0 0 300px;
+}
+
+@media (max-width:999px) {
+    .cultura-section{
+        margin-left: 40px;
+    }    
+}
+
+
+
+.cultura-article{
+    width: 900px;
+    margin-left: 300px;
+}
+
+.cultura-text{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 22px;
+    color: #707070;
+    margin-top: 10px;
+}
+
+@media (max-width: 999px){
+    .cultura-text {
+      width: 335px; 
+      margin-left: -285px;  
+      font-size: 18px;
+    }    
+}
+
+.topicos-cultura{
+    margin: 50px  0 0 300px;
+}
+
+@media (max-width: 999px){
+    .topicos-cultura{
+        margin: 25px  0 0 15px;
+    }    
+}
+
+
+.topicos-text{
+    color: #00D42A;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.saiba-mais{
+    border-radius: 10px;
+    background-color: #00d42a;
+    color: white;
+    width: 100px;
+    border-style: none;
+    height: 25px;  
+    font-weight: bold;    
+    margin: 50px 0 0 300px;    
+}
+
+@media (max-width: 999px){
+    .saiba-mais{
+      margin-left: 235px;
+    }    
+}
+
+/* ----------- seção contato --------------*/
+
+.vagas{
+    margin-top: 80px;
+}
+
+@media (max-width:900px) {
+    .vagas{
+        margin-top: 60px;
+    }
+        
+}
+
+.vagas-section{
+    color:#7b20b8;    
+    display: flex;
+    margin: -26px 0 0 300px;
+}
+
+@media (max-width: 999px){
+    .vagas-section {
+      width: 350px; 
+      margin-left: 40px;        
+    }    
+}
+
+.vagas-box{
+    margin: 40px 0 10px 300px;
+}
+
+@media (max-width: 999px){
+    .vagas-box {
+      
+    }    
+}
+
+.opcoes-vagas{
+    border-radius: 5px;
+    border: 2px solid;
+    border-color: grey;
+    width: 900px;
+    height: 50px;
+  
+    margin-bottom: 10px;
+          
+}
+
+@media (max-width: 999px){
+    .opcoes-vagas {
+        width: 200px;
+        height: 25px;
+        font-size: 16px; 
+        margin: 20px 0 0 15px; 
+    }    
+}
+
+.opcoes-vagas input{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
+
+.tipo-vaga {
+    
+    margin: 20px 0 0 300px;
+    width: 900px;
+    height: 50px;
+    border-style: solid 2px;
+    border-color: grey;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #707070;   
+}   
+
+@media (max-width: 999px){
+    .tipo-vaga {
+        margin: 20px 0 0 15px;
+        width: 340px;
+        height: 40px; 
+    }    
+}
+
+.tipo-area {
+    
+    margin: 20px 0 0 300px;
+    width: 900px;
+    height: 50px;
+    border-style: solid 2px;
+    border-color: grey;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #707070;   
+}   
+
+@media (max-width: 999px){
+    .tipo-area {
+        margin: 20px 0 0 15px;
+        width: 340px;
+        height: 40px; 
+    }    
+}
+ 
+.planilha-vagas{
+    margin: 50px 0 0 400px;
+    width: 900px;
+}
+
+@media (max-width: 999px){
+    .planilha-vagas {
+        width: 200px;
+        height: 25px;
+        font-size: 16px; 
+        margin: 20px 0 0 15px; 
+    }    
+}
+
+table{
+    width: 900px;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+@media (max-width: 999px){
+    table {
+        width: 300px;
+        height: 25px;
+        font-size: 16px; 
+        margin: 20px 0 0 15px; 
+    }    
+}
+
+
+
+.coluna-oportunidades{
+    color: #B362E9;
+    font-weight: bold;
+    width: 400px;    
+}
+
+@media (max-width: 999px){
+    .coluna-oportunidades {
+        width: 200px;
+        height: 25px;
+        font-size: 16px; 
+        margin: 20px 0 0 15px; 
+    }    
+}
+
+.coluna-numero-vagas{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    color: #707070;  
+    width: 150px;    
+}
+
+@media (max-width: 999px){
+    .coluna-numero-vagas {
+        width: 200px;
+        height: 25px;
+        font-size: 16px; 
+        margin: 20px 0 0 15px; 
+    }    
+}
+
+.coluna-tipo-vaga{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    color: #707070;        
+}
+
+@media (max-width: 999px){
+    .coluna-tipo-vagas {
+        width: 200px;
+        height: 25px;
+        font-size: 16px; 
+        margin: 20px 0 0 15px; 
+    }    
+}
+
+@media (max-width: 999px){
+    .option {
+        width: 200px;        
+    }    
+}
+
+/* ----------- seção contato --------------*/
+
+footer{
+    background: #B362E9;
+    margin-top: 20px;
+}
+
+@media (max-width: 999px){
+    footer {
+        margin-top: 200px;       
+    }    
+}
+
+address{
+    text-align: center;  
+    font-size: 18px;  
+}
+
+@media (max-width: 999px){
+    address {
+        margin-top: 0px;  
+        font-size: 16px;      
+    }    
+}
+
+footer p{
+    text-align: center;
+    margin-top: 10px;
+}
