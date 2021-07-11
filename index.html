@@ -7,11 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Links -->
   <link rel="stylesheet" href="resources/css/carrosel/carrosel.css">
-  <link rel="stylesheet" href="resources/css/menu/menu1.css">  
+  <link rel="stylesheet" href="resources/css/menu/menu1.css">
   <link rel="stylesheet" href="resources/css/estilos/estilos.css">
   <link rel="stylesheet" href="resources/css/accordion/accordion.css">
   <link rel="stylesheet" href="resources/css/galeria/galeria.css">
   <link rel="stylesheet" href="resources/css/galeria/img">
+  <link rel="stylesheet" href="resources/css/footer/footer.css">
 
   <!-- Bootstrap CSS -->
   <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -30,7 +31,7 @@
         <div class="line3"></div>
       </div>
       <ul class="nav-list" style="z-index: 4;">
-        <li><a href="#">Quem Somos</a></li>
+        <li><a href="#">Serviços</a></li>
         <li><a href="#">Cultura</a></li>
         <li><a href="#">Vagas</a></li>
         <li><a href="#">Contato</a></li>
@@ -112,7 +113,7 @@
       <div class="galeria">
         <div class="single-galeria wg2 hg2">
           <div class="img">
-            <img src="resources/css/galeria/img/ifoof.jpg" alt="logotipo ifood">
+            <img src="resources/css/galeria/img/img-04.png" alt="imagem ifood">
           </div>
           <div class="overflow"></div>
           <div class="conteudo">            
@@ -122,27 +123,27 @@
 
         <div class="single-galeria wg2">
           <div class="img">
-            <img src="resources/css/galeria/img/avon.jpg" alt="logotipo avon">
+            <img src="resources/css/galeria/img/img-01.png" alt="imagem netflix">
           </div>
           <div class="overflow"></div>
           <div class="conteudo">            
-            <p>Projeto realizado <br> para <b>avon</b></p>
+            <p>Projeto realizado <br> para <b>Netflix</b></p>
           </div>
         </div>
 
         <div class="single-galeria">
           <div class="img">
-            <img src="resources/css/galeria/img/dhl.png" alt="logotipo dhl">
+            <img src="resources/css/galeria/img/img-05.png" alt="imagem nubank">
           </div>
           <div class="overflow"></div>
           <div class="conteudo">            
-            <p>CProjeto realizado <br> para <b>dhl</b></p>
+            <p>CProjeto realizado <br> para <b>Nubank</b></p>
           </div>
         </div>
 
         <div class="single-galeria">
           <div class="img">
-            <img src="resources/css/galeria/img/disney.jpg" alt="logotipo disney">
+            <img src="resources/css/galeria/img/img-03.png" alt="imagem warner bros">
           </div>
           <div class="overflow"></div>
           <div class="conteudo">           
@@ -210,10 +211,19 @@
           de conceitos que devem estar no DNA de todos que 
           trabalham aqui:</p>
       </article>
-      <div class="topicos-cultura">
-        <p class="topicos-text">1. Humanização</p>
-        <p class="topicos-text">2. Inteligência</p>
-        <p class="topicos-text">3. Sustentabilidade</p>
+      <div class="cultura-container">
+        <div class="cultura-item">
+          <p>1. Humanização</p>
+          <ion-icon name="accessibility"></ion-icon>
+        </div>
+        <div class="cultura-item">
+          <p>2. Inteligência</p>
+          <ion-icon name="heart" class="cultura-item"></ion-icon>
+        </div>
+        <div class="cultura-item">
+          <p>3. Sustentabilidade</p>
+          <ion-icon name="earth" class="cultura-item"></ion-icon>
+        </div>
       </div>
       <div>
         <button class="saiba-mais">Saiba mais</button>
@@ -298,6 +308,16 @@
       <address>Rua Cel. Genuíno, 358 - Centro Histórico</address>
       <address>Porto Alegre - RS, 90010-350</address>
     </div>
+    <div id="redessociais">
+      <a href="https://twitter.com/home" target="_blank">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </a>
+      <a href="https://www.facebook.com/" target="_blank">
+        <ion-icon name="logo-facebook"></ion-icon>
+
+      <a href="https://www.instagram.com/dogdavez/" target="_blank">	
+        <ion-icon name="logo-instagram"></ion-icon>
+    </div>
     <!--
     <div class="redes-sociais">
       <img src="" alt="logotipo instagram">
@@ -326,6 +346,7 @@
   </script>-->
   <script src="resources/css/carrosel/carrosel.js"></script> 
   <script src="resources/css/menu/mobile-navbar.js"></script>
+  <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 </body>
 
 </html>
