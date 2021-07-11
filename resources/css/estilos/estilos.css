@@ -4,8 +4,7 @@
 }
 
 .linhadecorativa{
-    width: 30px;
-    margin-left: 260px;    
+    width: 40px;     
 }
 
 @media (max-width: 999px){
@@ -30,7 +29,8 @@
 .servicos-section{
     color:#7b20b8;    
     display: flex;
-    margin: -26px 0 0 300px;
+    margin: -26px 0 0 70px;
+    font-size: 26px;
 }
 
 @media (max-width: 999px){
@@ -46,10 +46,11 @@
     color: white;
     width: 110px;
     border-style: none;
-    height: 28px;  
+    height: 40px;  
     font-weight: bold;    
     margin: 30px 400px 0 0;
     float: right;
+    font-size: 16px;
 }
 
 @media (max-width: 999px){
