@@ -7,20 +7,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Links -->
   <link rel="stylesheet" href="resources/css/carrosel/carrosel.css">
-  <link rel="stylesheet" href="resources/css/menu/menu1.css">  
+  <link rel="stylesheet" href="resources/css/menu/menu1.css">
   <link rel="stylesheet" href="resources/css/estilos/estilos.css">
   <link rel="stylesheet" href="resources/css/accordion/accordion.css">
   <link rel="stylesheet" href="resources/css/galeria/galeria.css">
   <link rel="stylesheet" href="resources/css/galeria/img">
-
-  <!-- Bootstrap CSS -->
-  <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+  <link rel="stylesheet" href="resources/css/depoimento/depoimento.css">
+  <link rel="stylesheet" href="resources/css/footer/footer.css">
+  <link rel="stylesheet" href="/ops.html">
+  
+ 
   <title>4U!</title>
 </head>
 
 <body>
-
+         <!--    menu      -->
   <header>   
     <nav>
       <a class="logo" href="#">4U!</a>
@@ -30,14 +31,14 @@
         <div class="line3"></div>
       </div>
       <ul class="nav-list" style="z-index: 4;">
-        <li><a href="#">Quem Somos</a></li>
+        <li><a href="#">Serviços</a></li>
         <li><a href="#">Cultura</a></li>
         <li><a href="#">Vagas</a></li>
         <li><a href="#">Contato</a></li>
       </ul>
     </nav>
   </header>
-  
+            <!-- carossel -->
   <main>
     <section class="carrosel">
       <div class="gallery">
@@ -52,7 +53,7 @@
         </div>
       </div>
     </section>
-    
+        <!--    seção serviços -->
     <section>
       <div class="servicos">
         <img class="linhadecorativa" src="resources/css/itemdecorativo/linha2.png" alt="linha decorativa roxa">
@@ -93,11 +94,11 @@
         </ul>
       </div>       
 
-      <div class="botao">
-        <a class="botao-servicos" href="#"><button>Saiba mais</button></a>
+      <div>
+        <a  href="ops.html"><button class="botao-roxo">Saiba mais</button></a> 
       </div>
     </section> 
-
+              <!-- seção jobs-->
     <section >
       <div class="jobs">
         <img class="linhadecorativa" src="resources/css/itemdecorativo/linha1.png" alt="linha decorativa verde">
@@ -112,7 +113,7 @@
       <div class="galeria">
         <div class="single-galeria wg2 hg2">
           <div class="img">
-            <img src="resources/css/galeria/img/ifoof.jpg" alt="logotipo ifood">
+            <img src="resources/css/galeria/img/img-04.png" alt="imagem ifood">
           </div>
           <div class="overflow"></div>
           <div class="conteudo">            
@@ -122,27 +123,27 @@
 
         <div class="single-galeria wg2">
           <div class="img">
-            <img src="resources/css/galeria/img/avon.jpg" alt="logotipo avon">
+            <img src="resources/css/galeria/img/img-01.png" alt="imagem netflix">
           </div>
           <div class="overflow"></div>
           <div class="conteudo">            
-            <p>Projeto realizado <br> para <b>avon</b></p>
+            <p>Projeto realizado <br> para <b>Netflix</b></p>
           </div>
         </div>
 
         <div class="single-galeria">
           <div class="img">
-            <img src="resources/css/galeria/img/dhl.png" alt="logotipo dhl">
+            <img src="resources/css/galeria/img/img-05.png" alt="imagem nubank">
           </div>
           <div class="overflow"></div>
           <div class="conteudo">            
-            <p>CProjeto realizado <br> para <b>dhl</b></p>
+            <p>CProjeto realizado <br> para <b>Nubank</b></p>
           </div>
         </div>
 
         <div class="single-galeria">
           <div class="img">
-            <img src="resources/css/galeria/img/disney.jpg" alt="logotipo disney">
+            <img src="resources/css/galeria/img/img-03.png" alt="imagem warner bros">
           </div>
           <div class="overflow"></div>
           <div class="conteudo">           
@@ -150,49 +151,66 @@
           </div>
         </div>  
         <div class="botao">
-          <a class="botao-jobs" href="#"><button>Ver todos</button></a>
+          <a class="botao-jobs" href="ops.html"><button>Ver todos</button></a>
         </div>
             
       </div>
     </section> 
-    
+                     <!-- Seção contato-->
     <section >
       <div class="contato">
         <img class="linhadecorativa" src="resources/css/itemdecorativo/linha2.png" alt="linha decorativa roxa">
-        <h2 class="contato-section">Contato</h2>
+        <h2 class="contato-section">O que estão falando sobre nós</h2>
       </div>
-      <article class="contato-article">
-        <p class="texto-contato">
-          Gostou da gente? Manda teu alô!
-        </p>
-      </article>  
+      <div class="cards-depoimento">
 
-      <div class="formulario">      
-        <form id="form-contato" method="post" action="recebe-dados.php">
-          <input class="input-form" type="text" name="nome" placeholder=" Digite seu nome">
-          <input class="input-form" type="email" name="email" placeholder=" Digite seu e-mail">
-          <input class="input-form" type="number" name="numero" min="11" placeholder=" Digite seu WhatsApp (00-12345-6789)">
-          <textarea class="textarea" name="area-texto" id="" cols="30" rows="5" placeholder=" Digite sua mensagem"></textarea>
-        </form>
-      </div>
-      <div class="botao">
-        <a class="botao-form" href="#"><button>Enviar</button></a>
-      </div>   
-      <div>
-        <h3 class="news">ASSINE NOSSA NEWSLETTER!</h3>
-        <P class="news-text">
-          A gente jura que não vai lotar a sua caixa de e-mails!
-        </P>       
-        <form>
-          <input class="newsletter" type="email" placeholder=" Digite seu e-mail">
-                    
-          <div>
-            <button class="botao-newsletter" type="submit" value="enviar">Assinar</button>
+        <div class="card">
+          <img  class="user" src="resources/css/depoimento/cris.jpg" alt="foto de mulher sorrindo">
+          <h3>Maitê</h3>
+          <div class="stars-box" >
+            <img class="star" src="resources/css/depoimento/star.svg" alt="estrela amarela">
+            <img class="star" src="resources/css/depoimento/star.svg" alt="estrela amarela">
+            <img class="star" src="resources/css/depoimento/star.svg" alt="estrela amarela">
+            <img class="star" src="resources/css/depoimento/star.svg" alt="estrela amarela">
+            <img class="star" src="resources/css/depoimento/star.svg" alt="estrela amarela">
+          </div>
+          <p>
+            <blockquote>Simples, profissional e super descontraido. Na 4U! não tem rotina, todo dia é um novo aprendizado!</blockquote>
+          </p>
+        </div>
+
+        <div class="card">
+            <img  class="user" src="resources/css/depoimento/dani.jpg" alt="foto de mulher sorrindo">
+            <h3>Laís</h3>
+            <div class="stars-box" >
+              <img class="star" src="resources/css/depoimento/star.svg" alt="estrela amarela">
+              <img class="star" src="resources/css/depoimento/star.svg" alt="estrela amarela">
+              <img class="star" src="resources/css/depoimento/star.svg" alt="estrela amarela">
+              <img class="star" src="resources/css/depoimento/star.svg" alt="estrela amarela">
+              <img class="star" src="resources/css/depoimento/star.svg" alt="estrela amarela">
+            </div>
+            <p>
+              <blockquote>Meus dias na 4U! tem sido de aprendizado constante e muitos projetos estimulantes. </blockquote>
+            </p>
+          </div>
+        
+          <div class="card">
+            <img  class="user" src="resources/css/depoimento/marcelo.jpg" alt="foto de mulher sorrindo">
+              <h3>Marcelo</h3>
+              <div class="stars-box" >
+                <img class="star" src="resources/css/depoimento/star.svg" alt="estrela amarela">
+                <img class="star" src="resources/css/depoimento/star.svg" alt="estrela amarela">
+                <img class="star" src="resources/css/depoimento/star.svg" alt="estrela amarela">
+                <img class="star" src="resources/css/depoimento/star.svg" alt="estrela amarela">
+                <img class="star" src="resources/css/depoimento/star.svg" alt="estrela amarela">
+              </div>
+              <p>
+                <blockquote>Na 4U! você tem certeza de estar realizando projetos que impactam a vida de milhares de pessoas! </blockquote>
+              </p>
           </div>          
-        </form>    
-      </div> 
+      </div>      
     </section>
-
+                <!--   Seção cultura    -->
     <section>
       <div class="cultura">
         <img class="linhadecorativa" src="resources/css/itemdecorativo/linha1.png" alt="linha decorativa verde">
@@ -210,17 +228,28 @@
           de conceitos que devem estar no DNA de todos que 
           trabalham aqui:</p>
       </article>
-      <div class="topicos-cultura">
-        <p class="topicos-text">1. Humanização</p>
-        <p class="topicos-text">2. Inteligência</p>
-        <p class="topicos-text">3. Sustentabilidade</p>
+      <div class="cultura-container">
+        <div class="cultura-item">
+          <p>1. Humanização</p>
+          <ion-icon name="accessibility"></ion-icon>
+        </div>
+        <div class="cultura-item">
+          <p>2. Inteligência</p>
+          <ion-icon name="heart" class="cultura-item"></ion-icon>
+        </div>
+        <div class="cultura-item">
+          <p>3. Sustentabilidade</p>
+          <ion-icon name="earth" class="cultura-item"></ion-icon>
+        </div>
       </div>
+      <iframe width="900" height="515" src="https://www.youtube.com/embed/5aW5Y4oQ9Wg" 
+      title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <div>
-        <button class="saiba-mais">Saiba mais</button>
-      </div>
-      
+        <a href="ops.html"><button class="saiba-mais">Saiba mais</button></a>
+        
+      </div>      
     </section>
-
+                <!--    seção vagas    -->
     <section>
       <div class="vagas">
         <img class="linhadecorativa" src="resources/css/itemdecorativo/linha2.png" alt="linha decorativa verde">
@@ -292,11 +321,24 @@
       </div>
     </section>
   </main>
+   
+         <!--  rodapé   -->
+
   <footer>
     <div>
       <br>
       <address>Rua Cel. Genuíno, 358 - Centro Histórico</address>
       <address>Porto Alegre - RS, 90010-350</address>
+    </div>
+    <div id="redessociais">
+      <a href="https://twitter.com/home" target="_blank">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </a>
+      <a href="https://www.facebook.com/" target="_blank">
+        <ion-icon name="logo-facebook"></ion-icon>
+
+      <a href="https://www.instagram.com/dogdavez/" target="_blank">	
+        <ion-icon name="logo-instagram"></ion-icon>
     </div>
     <!--
     <div class="redes-sociais">
@@ -326,6 +368,7 @@
   </script>-->
   <script src="resources/css/carrosel/carrosel.js"></script> 
   <script src="resources/css/menu/mobile-navbar.js"></script>
+  <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 </body>
 
 </html>

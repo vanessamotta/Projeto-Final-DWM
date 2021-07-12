@@ -3,6 +3,10 @@
     padding: 0;   
 }
 
+body{
+    background: #f5f5f5;
+}
+
 .linhadecorativa{
     width: 40px;     
 }
@@ -13,6 +17,27 @@
     }    
 }
 
+
+.botao-roxo{
+    background-color: #ffff;
+    color: #7b20b8;
+    border-style: solid;
+    border-color: #7b20b8;
+    font-weight: bold;  
+    font-size: 20px;
+    border-radius: 20px; 
+    height: 40px; 
+    margin-top: 15px;    
+    width: 160px; 
+    box-shadow: 0 0 0.5em grey;
+    margin-right: 260px;
+    float: right;
+}
+
+.botao-roxo:hover{
+    color: #00d42a;
+    border-color: #00d42a;
+}
 
 /* ----------- seção serviços -------------- */
 
@@ -39,15 +64,15 @@
       margin-left: 40px;  
     }    
 }
-
+ /*
 .botao-servicos button{
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: #B362E9;
     color: white;
-    width: 110px;
+    width: 131px;
     border-style: none;
-    height: 40px;  
-    font-weight: bold;    
+    height: 37px;
+    font-weight: bold;  
     margin: 30px 400px 0 0;
     float: right;
     font-size: 16px;
@@ -58,7 +83,7 @@
       margin: 30px 35px 0 0;
       float: right;
     }    
-}
+}*/
 
 
 /* ----------- seção jobs --------------*/
@@ -69,7 +94,7 @@
 
 @media (max-width: 999px){
     .jobs {
-        margin-top: 70px;
+        margin-top: 100px;
     }    
 }
 
@@ -107,14 +132,14 @@
 }
 
 .botao-jobs button{
-    border-radius: 10px;
     background-color: #00d42a;
     color: white;
-    width: 110px;
     border-style: none;
-    height: 28px;  
     font-weight: bold;    
-    margin: 30px 400px 0 0;    
+    margin: 30px 400px 0 0;
+    border-radius: 20px;
+    width: 131px;
+    height: 37px;    
 }
 
 @media (max-width: 999px){
@@ -131,7 +156,7 @@
 
 @media (max-width: 999px){
     .contato {
-      margin-top: 720px;
+      margin-top: 497px;
     }    
 }
 
@@ -218,15 +243,15 @@ input{
 }
 
 .botao-form button{
-    border-radius: 10px;
     background-color: #B362E9;
     color: white;
-    width: 110px;
     border-style: none;
-    height: 28px;  
     font-weight: bold;
     margin: 15px 415px 0 0;
     float: right;
+    border-radius: 20px;
+    width: 131px;
+    height: 37px;
 }
 
 @media (max-width: 999px){
@@ -240,14 +265,14 @@ input{
     color: #707070;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-family: 20px;
-    margin: 100px 0 0 300px;
+    margin: 200px 0 0 300px;
     width: 900px;
 }
 
 @media (max-width: 999px){
     .news {
         font-size: 18px; 
-        margin: 40px 0 0 15px; 
+        margin: 90px 0 0 15px; 
     }    
 }
 
@@ -336,7 +361,6 @@ form .newsletter {
 }
 
 
-
 .cultura-article{
     width: 900px;
     margin-left: 300px;
@@ -357,23 +381,58 @@ form .newsletter {
     }    
 }
 
-.topicos-cultura{
-    margin: 50px  0 0 300px;
+.cultura-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 38%;
+    padding-left: 300px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    
+}
+@media (max-width: 375px){
+
+    .cultura-container{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 40px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
-@media (max-width: 999px){
+/** @media (max-width: 1080px){
     .topicos-cultura{
         margin: 25px  0 0 15px;
+    }
+    .cultura-container{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 44%;
+        padding: 40px;
+        flex-direction: row;
+        justify-content: space-between;
+        
     }    
+
+}**/
+
+p{
+    display: flex;
 }
 
-
-.topicos-text{
+.cultura-item{
     color: #00D42A;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 22px;
     font-weight: bold;
     margin-top: 10px;
+
 }
 
 .saiba-mais{
