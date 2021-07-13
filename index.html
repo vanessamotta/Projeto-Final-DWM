@@ -6,40 +6,42 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Links -->
-  <link rel="stylesheet" href="resources/css/carrosel/carrosel.css">
-  <link rel="stylesheet" href="resources/css/menu/menu1.css">
-  <link rel="stylesheet" href="resources/css/estilos/estilos.css">
-  <link rel="stylesheet" href="resources/css/accordion/accordion.css">
-  <link rel="stylesheet" href="resources/css/galeria/galeria.css">
-  <link rel="stylesheet" href="resources/css/galeria/img">
-  <link rel="stylesheet" href="resources/css/depoimento/depoimento.css">
-  <link rel="stylesheet" href="resources/css/footer/footer.css">
-  <link rel="stylesheet" href="/ops.html">
-  
- 
+  <link rel="stylesheet" href="resources/css/teste-galeri.css">
+  <link rel="stylesheet" href="resources/css/depoimento.css">
+  <link rel="stylesheet" href="resources/css/carrosel.css">
+  <link rel="stylesheet" href="resources/css/menu1.css">
+  <link rel="stylesheet" href="resources/css/estilos.css">
+  <link rel="stylesheet" href="resources/css/accordion.css">
+  <link rel="stylesheet" href="resources/css/galeria.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Bootstrap CSS -->
+  <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+    
   <title>4U!</title>
+  
 </head>
 
 <body>
-         <!--    menu      -->
+
   <header>   
     <nav>
-      <a class="logo" href="#">4U!</a>
+      <a class="logo" href="index.html">4U!</a>
       <div class="mobile-menu">
         <div class="line1"></div>
         <div class="line2"></div>
         <div class="line3"></div>
       </div>
       <ul class="nav-list" style="z-index: 4;">
-        <li><a href="#">Serviços</a></li>
-        <li><a href="#">Cultura</a></li>
-        <li><a href="#">Vagas</a></li>
-        <li><a href="#">Contato</a></li>
+        <li><a href="index.html#servicos1">Serviços</a></li>
+        <li><a href="index.html#jobs1">Jobs</a></li>
+        <li><a href="index.html#contato1">Contato</a></li>
+        <li><a href="index.html#cultura1">Cultura</a></li>
+        <li><a href="index.html#vagas1">Vagas</a></li>
       </ul>
     </nav>
-  </header>
-            <!-- carossel -->
-  <main>
+
     <section class="carrosel">
       <div class="gallery">
         <div class="gallery__prev"></div>
@@ -53,10 +55,15 @@
         </div>
       </div>
     </section>
-        <!--    seção serviços -->
-    <section>
+  </header>
+  
+  <main>
+    <!-------------------------------->
+    <!-----------serviços------------->
+    <!-------------------------------->
+    <section id="servicos1">
       <div class="servicos">
-        <img class="linhadecorativa" src="resources/css/itemdecorativo/linha2.png" alt="linha decorativa roxa">
+        <img class="linhadecorativa" src="resources/css/img/linha2.png" alt="linha decorativa roxa">
         <h2 class="servicos-section">Serviços que oferecemos</h2>
       </div>
       <div class="item">
@@ -70,7 +77,6 @@
           <li><a href="#">Pesquisas com usuários</a></li>
         </ul>
       </div>
-
       <div class="item">
         <input type="checkbox" id="check2">
         <label for="check2">Softwares e Operações de TI</label>
@@ -93,15 +99,17 @@
           <li><a href="#">Culturalização para inovação</a></li>
         </ul>
       </div>       
-
-      <div>
-        <a  href="ops.html"><button class="botao-roxo">Saiba mais</button></a> 
+      <div class="botao">
+        <a class="botao-servicos" href="#"><button>Saiba mais</button></a>
       </div>
     </section> 
-              <!-- seção jobs-->
-    <section >
+
+    <!-------------------------------->
+    <!-----------jobs----------------->
+    <!-------------------------------->
+    <section class="jobs-container" id="jobs1">
       <div class="jobs">
-        <img class="linhadecorativa" src="resources/css/itemdecorativo/linha1.png" alt="linha decorativa verde">
+        <img class="linhadecorativa" src="resources/css/img/linha1.png" alt="linha decorativa verde">
         <h2 class="jobs-section">Jobs</h2>
       </div>
 
@@ -109,111 +117,14 @@
         <p class="jobs-text">Aqui a gente não trabalha, nós nos divertimos! Por isso conquistamos um quadro de clientes tão ativo,
           que só escolhe o que tem de melhor no mercado. Não se convenceu? Então confere aí!</p>
       </article>
-      
-      <div class="galeria">
-        <div class="single-galeria wg2 hg2">
-          <div class="img">
-            <img src="resources/css/galeria/img/img-04.png" alt="imagem ifood">
-          </div>
-          <div class="overflow"></div>
-          <div class="conteudo">            
-            <p>Projeto realizado <br> para <b>ifood</b></p>
-          </div>
-        </div>
+      </section>
 
-        <div class="single-galeria wg2">
-          <div class="img">
-            <img src="resources/css/galeria/img/img-01.png" alt="imagem netflix">
-          </div>
-          <div class="overflow"></div>
-          <div class="conteudo">            
-            <p>Projeto realizado <br> para <b>Netflix</b></p>
-          </div>
-        </div>
-
-        <div class="single-galeria">
-          <div class="img">
-            <img src="resources/css/galeria/img/img-05.png" alt="imagem nubank">
-          </div>
-          <div class="overflow"></div>
-          <div class="conteudo">            
-            <p>CProjeto realizado <br> para <b>Nubank</b></p>
-          </div>
-        </div>
-
-        <div class="single-galeria">
-          <div class="img">
-            <img src="resources/css/galeria/img/img-03.png" alt="imagem warner bros">
-          </div>
-          <div class="overflow"></div>
-          <div class="conteudo">           
-            <p>Projeto realizado <br> para <b>disney</b></p>
-          </div>
-        </div>  
-        <div class="botao">
-          <a class="botao-jobs" href="ops.html"><button>Ver todos</button></a>
-        </div>
-            
-      </div>
-    </section> 
-                     <!-- Seção contato-->
-    <section >
-      <div class="contato">
-        <img class="linhadecorativa" src="resources/css/itemdecorativo/linha2.png" alt="linha decorativa roxa">
-        <h2 class="contato-section">O que estão falando sobre nós</h2>
-      </div>
-      <div class="cards-depoimento">
-
-        <div class="card">
-          <img  class="user" src="resources/css/depoimento/cris.jpg" alt="foto de mulher sorrindo">
-          <h3>Maitê</h3>
-          <div class="stars-box" >
-            <img class="star" src="resources/css/depoimento/star.svg" alt="estrela amarela">
-            <img class="star" src="resources/css/depoimento/star.svg" alt="estrela amarela">
-            <img class="star" src="resources/css/depoimento/star.svg" alt="estrela amarela">
-            <img class="star" src="resources/css/depoimento/star.svg" alt="estrela amarela">
-            <img class="star" src="resources/css/depoimento/star.svg" alt="estrela amarela">
-          </div>
-          <p>
-            <blockquote>Simples, profissional e super descontraido. Na 4U! não tem rotina, todo dia é um novo aprendizado!</blockquote>
-          </p>
-        </div>
-
-        <div class="card">
-            <img  class="user" src="resources/css/depoimento/dani.jpg" alt="foto de mulher sorrindo">
-            <h3>Laís</h3>
-            <div class="stars-box" >
-              <img class="star" src="resources/css/depoimento/star.svg" alt="estrela amarela">
-              <img class="star" src="resources/css/depoimento/star.svg" alt="estrela amarela">
-              <img class="star" src="resources/css/depoimento/star.svg" alt="estrela amarela">
-              <img class="star" src="resources/css/depoimento/star.svg" alt="estrela amarela">
-              <img class="star" src="resources/css/depoimento/star.svg" alt="estrela amarela">
-            </div>
-            <p>
-              <blockquote>Meus dias na 4U! tem sido de aprendizado constante e muitos projetos estimulantes. </blockquote>
-            </p>
-          </div>
-        
-          <div class="card">
-            <img  class="user" src="resources/css/depoimento/marcelo.jpg" alt="foto de mulher sorrindo">
-              <h3>Marcelo</h3>
-              <div class="stars-box" >
-                <img class="star" src="resources/css/depoimento/star.svg" alt="estrela amarela">
-                <img class="star" src="resources/css/depoimento/star.svg" alt="estrela amarela">
-                <img class="star" src="resources/css/depoimento/star.svg" alt="estrela amarela">
-                <img class="star" src="resources/css/depoimento/star.svg" alt="estrela amarela">
-                <img class="star" src="resources/css/depoimento/star.svg" alt="estrela amarela">
-              </div>
-              <p>
-                <blockquote>Na 4U! você tem certeza de estar realizando projetos que impactam a vida de milhares de pessoas! </blockquote>
-              </p>
-          </div>          
-      </div>      
-    </section>
-                <!--   Seção cultura    -->
-    <section>
+    <!-------------------------------->
+    <!-----------cultura-------------->
+    <!-------------------------------->
+    <section id="cultura1">
       <div class="cultura">
-        <img class="linhadecorativa" src="resources/css/itemdecorativo/linha1.png" alt="linha decorativa verde">
+        <img class="linhadecorativa" src="resources/css/img/linha1.png" alt="linha decorativa verde">
         <h2 class="cultura-section">Cultura</h2>
       </div>
       <article class="cultura-article">
@@ -229,30 +140,104 @@
           trabalham aqui:</p>
       </article>
       <div class="cultura-container">
-        <div class="cultura-item">
-          <p>1. Humanização</p>
-          <ion-icon name="accessibility"></ion-icon>
-        </div>
-        <div class="cultura-item">
-          <p>2. Inteligência</p>
-          <ion-icon name="heart" class="cultura-item"></ion-icon>
-        </div>
-        <div class="cultura-item">
-          <p>3. Sustentabilidade</p>
-          <ion-icon name="earth" class="cultura-item"></ion-icon>
-        </div>
-      </div>
-      <iframe width="900" height="515" src="https://www.youtube.com/embed/5aW5Y4oQ9Wg" 
-      title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <div>
-        <a href="ops.html"><button class="saiba-mais">Saiba mais</button></a>
         
+         <p class="cultura-item">1. Humanização</p>
+         <i class="fa fa-male cultura-item" style="font-size:50px;"></i>
+        
+          <p class="cultura-item">2. Inteligência</p>
+          <i class="fa fa-heart cultura-item" style="font-size:36px;"></i>
+        
+          <p class="cultura-item">3. Sustentabilidade</p>
+          <i class="fa fa-globe cultura-item" style="font-size:36px"></i>
+      </div>
+      <div>
+        <!------saiba mais------>
+        <div>
+          <button class="saiba-mais">Saiba mais</button>
+        </div>
+      </section>
+      <div class="div-video">
+       <iframe width="900" height="515" src="https://www.youtube.com/embed/5aW5Y4oQ9Wg" 
+      title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      
+
+    <!-------------------------------->
+    <!-----------depoimentos---------->
+    <!-------------------------------->
+     <section>
+      <div class="depoimentos">
+        <img class="linhadecorativa" src="resources/css/img/linha2.png" alt="linha decorativa roxa">
+        <h2 class="contato-section">O que estão falando sobre nós</h2>
+      </div>
+      <div class="div-depo">
+        <div class="cards-depoimento">
+
+          <div class="card">
+            <img  class="user" src="resources/css/img/cris.png" alt="foto de mulher sorrindo">
+            <h3>Bruna</h3>
+            <div class="stars-box" >
+              <img class="star" src="resources/css/img/star.svg" alt="estrela amarela">
+              <img class="star" src="resources/css/img/star.svg" alt="estrela amarela">
+              <img class="star" src="resources/css/img/star.svg" alt="estrela amarela">
+              <img class="star" src="resources/css/img/star.svg" alt="estrela amarela">
+              <img class="star" src="resources/css/img/star.svg" alt="estrela amarela">
+            </div>
+            <p>
+              <blockquote>"Eu considero a 4U! não uma empresa, mas um dos meus lares. Aqui as pessoas são muito humanas. A gente não cria uma 
+                relação de colegas, criamos uma relação de amizade muito sólida."</blockquote>
+            </p>
+          </div>
+
+          <div class="card">
+              <img  class="user" src="resources/css/img/dani.png" alt="foto de mulher sorrindo">
+              <h3>Laís</h3>
+              <div class="stars-box" >
+                <img class="star" src="resources/css/img/star.svg" alt="estrela amarela">
+                <img class="star" src="resources/css/img/star.svg" alt="estrela amarela">
+                <img class="star" src="resources/css/img/star.svg" alt="estrela amarela">
+                <img class="star" src="resources/css/img/star.svg" alt="estrela amarela">
+                <img class="star" src="resources/css/img/star.svg" alt="estrela amarela">
+              </div>
+              <p>
+                <blockquote>"O que eu mais adoro na 4U! é que elas é
+                  uma empresa feita e idealizada por mulheres. 
+                  Aqui temos espaço para falar sobre feminismo,
+                  diversidade e inclusão. Não só de uma forma
+                  corporativa, mas de maneira a ampliar o 
+                  conhecimento sobre esses assuntos.</blockquote>
+              </p>
+            </div>
+          
+            <div class="card">
+              <img  class="user" src="resources/css/img/marcelo.png" alt="foto de mulher sorrindo">
+                <h3>Marcelo</h3>
+                <div class="stars-box" >
+                  <img class="star" src="resources/css/img/star.svg" alt="estrela amarela">
+                  <img class="star" src="resources/css/img/star.svg" alt="estrela amarela">
+                  <img class="star" src="resources/css/img/star.svg" alt="estrela amarela">
+                  <img class="star" src="resources/css/img/star.svg" alt="estrela amarela">
+                  <img class="star" src="resources/css/img/star.svg" alt="estrela amarela">
+                </div>
+                <p>
+                  <blockquote>"A 4U! é um lugar surreal. Quando você vê de
+                    fora, parece que é só mais uma empresa 
+                    tentando ser moderna que tu sabe que 
+                    quando entrar não será nada tão diferente
+                    de um banco. Mas aqui acontece mais magias
+                    que na Disney.</blockquote>
+                </p>
+            </div>          
+        </div>
       </div>      
-    </section>
-                <!--    seção vagas    -->
-    <section>
+      </section>
+
+    <!-------------------------------->
+    <!-----------vagas---------------->
+    <!-------------------------------->
+    <section id="vagas1">
       <div class="vagas">
-        <img class="linhadecorativa" src="resources/css/itemdecorativo/linha2.png" alt="linha decorativa verde">
+        <img class="linhadecorativa" src="resources/css/img/linha2.png" alt="linha decorativa ROXA">
         <h2 class="vagas-section">Vagas</h2>
       </div>
 
@@ -282,7 +267,7 @@
             <td></td>
           </tr>
           <tr>
-            <td class="coluna-oportunidades">Analista de RH</td>
+            <td class="coluna-oportunidades"><a href="vagas.html">Analista de RH</a></td>
             <td class="coluna-numero-vagas">1</td>
             <td class="coluna-tipo-vaga">Efetivo</td>
           </tr>
@@ -320,55 +305,84 @@
         </table>
       </div>
     </section>
+
+    <!-------------------------------->
+    <!-----------contato-------------->
+    <!-------------------------------->
+    <section id="contato1">
+      <div class="contato">
+        <img class="linhadecorativa" src="resources/css/img/linha2.png" alt="linha decorativa roxa">
+        <h2 class="contato-section">Contato</h2>
+        
+      </div>
+      <article class="contato-article">
+        <p class="texto-contato">
+          Parece que você está interessado nos nossos serviços. <br> Se gostou da gente manda teu alô!
+        </p>
+        <span style="width: 100%; text-align: right; display: block;"><i class="fa fa-whatsapp" style="font-size:36px; color:#7b20b8;"></i></span>
+      </article>  
+      <div class="formulario">      
+        <form id="form-contato" method="post" action="recebe-dados.php">
+          <input class="input-form" type="text" name="nome" placeholder=" Digite seu nome">
+          <input class="input-form" type="email" name="email" placeholder=" Digite seu e-mail">
+          <input class="input-form" type="number" name="numero" min="11" placeholder=" Digite seu WhatsApp (00-12345-6789)">
+          <textarea class="textarea" name="area-texto" id="" cols="30" rows="5" placeholder=" Digite sua mensagem"></textarea>
+        </form>
+      </div>
+      <div class="botao">
+        <a class="botao-form" href="#"><button>Enviar</button></a>
+      </div>  
+      <!----------news letter-----------> 
+      <div>
+        <h3 class="news">ASSINE NOSSA NEWSLETTER!</h3>
+        <P class="news-text">
+          A gente jura que não vai lotar a sua caixa de e-mails!
+        </P>       
+        <form class="form-container">
+          <input class="newsletter" type="email" placeholder="        Digite seu e-mail">
+                    
+          <div>
+            <button class="botao-newsletter" type="submit" value="enviar">Assinar</button>
+          </div>          
+        </form>    
+      </div> 
+    </section>
   </main>
-   
-         <!--  rodapé   -->
 
   <footer>
-    <div>
-      <br>
-      <address>Rua Cel. Genuíno, 358 - Centro Histórico</address>
-      <address>Porto Alegre - RS, 90010-350</address>
+    
+    <div class="footer-container">
+      <!-------redes sociais--------->
+      <div class="footer-item">
+        <a href="https://github.com/romuloreis/DWM2020" target="_blank">
+          <i class="fa fa-github icone-footer" style="font-size:36px;color:#fff;margin-right:20px;"></i></a>
+        <a href="https://www.facebook.com/" target="_blank">
+          <i class="fa fa-facebook-square icone-footer" style="font-size:36px;color:#fff;margin-right:20px;"></i></a>
+        <a href="https://www.linkedin.com/feed/" target="_blank">		
+          <i class="fa fa-linkedin-square icone-footer" style="font-size:36px;color:#fff;margin-right:20px;"></i></a>
+      </div>
+      <!-------endereço-------------->
+        <div class="footer-item">
+          <address>Rua Cel. Genuíno, 358 - Centro Histórico</address>
+          <address>Porto Alegre - RS, 90010-350</address>
+        </div>
+        <!-------direitos autorais------>
+        <div class="footer-item">
+          <p class="direitos-autorias">&copy; Todos os direitos reservados 4U!</p>
+        </div>
     </div>
-    <div id="redessociais">
-      <a href="https://twitter.com/home" target="_blank">
-        <ion-icon name="logo-twitter"></ion-icon>
-      </a>
-      <a href="https://www.facebook.com/" target="_blank">
-        <ion-icon name="logo-facebook"></ion-icon>
-
-      <a href="https://www.instagram.com/dogdavez/" target="_blank">	
-        <ion-icon name="logo-instagram"></ion-icon>
-    </div>
-    <!--
-    <div class="redes-sociais">
-      <img src="" alt="logotipo instagram">
-      <img src="" alt="logotipo facebook">
-      <img src="" alt="logotipo github">
-      <img src="" alt="logotipo whatsapp">
-      <img src="" alt="logotipo youtube">
-    </div>-->
-    <p class="direitos-autorias">&copy; Todos os direitos reservados 4U!</p>
-    <br>
-    <img class="rodape" alt="fotografia da empresa" src="resources/css/footer/img/footer.png">
+   
   </footer>
-
-
-
-
-
-
-
-
-
 
   <!-- Option 1: Bootstrap Bundle with Popper -->
   <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
   </script>-->
-  <script src="resources/css/carrosel/carrosel.js"></script> 
-  <script src="resources/css/menu/mobile-navbar.js"></script>
+
+  <script src="resources/js/carrosel.js"></script> 
+  <script src="resources/js/mobile-navbar.js"></script>
   <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+  
 </body>
 
 </html>

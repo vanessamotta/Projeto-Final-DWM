@@ -1,0 +1,704 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;   
+}
+
+body {
+    background-color: #fff;
+  }
+
+
+/*--------------------------------------*/
+/*-------------SERVIÇOS----------------*/
+/*------------------------------------*/
+
+.linhadecorativa{
+    width: 30px;
+    margin-left: 160px;    
+}
+
+.servicos{
+    margin-top: 550px;
+}
+
+.servicos-section{
+    color:#7b20b8;    
+    display: flex;
+    margin: -26px 0 0 200px;
+}
+
+.botao-servicos button{
+    border-radius: 20px;
+    background-color: #B362E9;
+    color: white;
+    width: 131px;
+    border-style: none;
+    height: 37px;
+    font-weight: bold;  
+    margin: 15px 150px 0 0;
+    float: right;
+}
+
+/*--------------------------------------*/
+/*-----------------jobs----------------*/
+/*------------------------------------*/
+
+.jobs{
+    margin-top: 120px;
+}
+
+.jobs-article{
+    width: 950px;
+    margin-left: 200px;
+}
+
+.jobs-section{
+    color: #00D42A;
+    display: flex;
+    margin: -26px 0 0 200px;
+}
+
+.jobs-text{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 22px;
+    color: #707070;
+    margin-top: 10px;
+}
+
+.botao-jobs button{
+    background-color: #00d42a;
+    color: white;
+    border-style: none;
+    font-weight: bold;    
+    margin: 30px 400px 0 0;
+    border-radius: 20px;
+    width: 131px;
+    height: 37px;    
+}
+
+/*--------------------------------------*/
+/*--------------contato----------------*/
+/*------------------------------------*/
+.contato{
+    margin-top: 170px;
+}
+
+.fa {
+    text-align: right;
+    
+}
+
+.contato-section{
+    color:#7b20b8;    
+    display: flex;
+    margin: -26px 0 0 200px;
+}
+
+.contato-article{
+    width: 900px;
+    margin-left: 200px;
+}
+
+.texto-contato{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 22px;
+    color: #707070;
+    margin-top: 10px;
+}
+
+input{
+    display: block;
+    margin-right: 36px;
+    background-color: #E9E9E9;
+}
+
+#form-contato .input-form{
+    background-color: #E9E9E9;
+    border-radius: 5px;
+    border-style: none;
+    width: 900px;
+    height: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    margin: 3px 0 10px 200px;
+}
+
+.input-form{
+    background-color: #E9E9E9;
+    border-radius: 5px;
+    border-style: none;
+    width: 900px;
+    height: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
+
+.textarea{
+    background-color: #E9E9E9;
+    border-radius: 5px;
+    border-style: none;
+    width: 900px;
+    height: 200px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    display: block;
+    margin: 20px 0 0 200px;
+}
+
+.botao-form button{
+    background-color: #B362E9;
+    color: white;
+    border-style: none;
+    font-weight: bold;
+    margin:15px 250px 0 0;;
+    float: right;
+    border-radius: 20px;
+    width: 131px;
+    height: 37px;
+}
+
+.news{
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 20px;
+    margin: 200px 0 0 200px;
+    width: 900px;
+    background-color: #B362E9;
+    padding: 20px;
+}
+
+.news-text{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 22px;
+    color: #707070;
+    margin: 10px 0 0 200px;
+}
+
+.newsletter{
+    border-radius: 40px;
+    border: 0.2px solid;
+    border-color: #E9E9E9;
+    box-shadow: 1px 1px 4px rgb(0 0 0 / 20%);
+    width: 730px;
+    height: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;      
+}
+
+.botao-newsletter{
+    border-radius: 20px;
+    background-color: #B362E9;
+    color: white;
+    border-style: none; 
+    font-weight: bold;
+    float: right;
+    width: 131px;
+    height: 37px;
+    
+}
+
+form .newsletter {
+    overflow: hidden;
+    padding: 0 3px 0 0;
+}
+
+.form-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 25px;
+    margin-left: 200px;
+}
+
+/*--------------------------------------*/
+/*--------------cultura----------------*/
+/*------------------------------------*/
+
+.cultura{
+    margin-top: 200px;
+}
+
+.cultura-section{
+    color: #00D42A;
+    display: flex;
+    margin: -27px 0 0 200px;
+}
+
+.cultura-article{
+    width: 900px;
+    margin-left: 200px;
+}
+
+.cultura-text{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 22px;
+    color: #707070;
+    margin-top: 10px;
+}
+
+.cultura-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 20%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0 0 200px;
+    
+}
+
+p{
+    display: flex;
+}
+
+.cultura-item{
+    color: #00D42A;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+
+}
+
+.saiba-mais{
+    border-radius: 20px;
+    background-color: #00d42a;
+    color: white;
+    width: 131px;
+    border-style: none;
+    height: 37px;  
+    font-weight: bold;    
+    margin: 15px 250px 0 0;
+    float: right;    
+}
+
+.div-video{
+    margin: 80px 0 0 200px;
+}
+
+/*--------------------------------------*/
+/*--------------depoimentos------------*/
+/*------------------------------------*/
+
+.depoimentos{
+    margin-top: 120px;
+}
+
+.div-depo{
+    margin-top: 60px;
+}
+
+.cards-depoimento{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 980px;
+    margin: 0 auto;
+    grid-gap: 40px
+}
+
+.card{
+    background-color: #fff ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 40px;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.123);
+}
+
+.card .user{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.card h3{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 5px;
+
+}
+
+blockquote{
+    text-align: center;
+    margin: 20px 0 0 0;
+    font-weight: 300;
+}
+
+.depoimentos p{
+    margin-top: 20px;
+    text-align: left;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.star{
+    width: 20px;
+}
+
+.stars-box{
+    margin-top: 10px;
+}
+
+/*--------------------------------------*/
+/*--------------vagas------------------*/
+/*------------------------------------*/
+
+.vagas{
+    margin-top: 170px;
+}
+
+.vagas-section{
+    color:#7b20b8;    
+    display: flex;
+    margin: -26px 0 0 200px;
+}
+
+.vagas-box{
+    margin: 40px 0 10px 200px;
+}
+
+.opcoes-vagas{
+    border-radius: 5px;
+    border: 2px solid;
+    border-color: grey;
+    width: 900px;
+    height: 50px;
+  
+    margin-bottom: 10px;
+          
+}
+
+.opcoes-vagas input{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
+
+.tipo-vaga {
+    
+    margin: 20px 0 0 200px;
+    width: 900px;
+    height: 50px;
+    border-style: solid 2px;
+    border-color: grey;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #707070;   
+}   
+
+.tipo-area {
+    
+    margin: 20px 0 0 200px;
+    width: 900px;
+    height: 50px;
+    border-style: solid 2px;
+    border-color: grey;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #707070;   
+}   
+ 
+.planilha-vagas{
+    margin: 50px 0 0 309px;
+    width: 900px;
+}
+
+tr a {
+    color:#B362E9;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+tr a:hover {
+    color:#5f2288;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+table{
+    width: 900px;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+.coluna-oportunidades{
+    color: #B362E9;
+    font-weight: bold;
+    width: 400px;    
+}
+
+.coluna-numero-vagas{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    color: #707070;  
+    width: 150px;    
+}
+
+.coluna-tipo-vaga{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    color: #707070;        
+}
+
+
+/*--------------------------------------*/
+/*--------------footer=----------------*/
+/*------------------------------------*/
+
+footer{
+    /**background: #B362E9;**/
+    margin-top: 140px;
+    background-image: url(img/footer-01.jpg);
+    width: 100%;
+    height: 580px;
+    background-size: cover;
+    background-color: #f5f5f5;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin-top: 300px;
+    margin-left: 37.5%;
+    align-items: center;
+    
+}
+
+.footer-item{
+    align-items: center;
+    padding: 25px;
+}
+
+.icone-footer{
+    font-size: 36px;
+    color: #000;
+}
+
+address{
+    text-align: center;  
+    
+}
+
+.direitos-autorias{
+    text-align: center;
+}
+
+/*
+footer p{
+    text-align: center;
+    margin-top: 10px;
+}
+.rodape{
+    width: 420px;
+}*/
+
+
+/*--------------------------------------*/
+/*--------------media query------------*/
+/*------------------------------------*/
+
+/*@media (max-width: 999px){
+    .linhadecorativa {
+      margin-left: 0px;
+    }    
+    .servicos {
+      margin-top: 150px;
+    }    
+    .servicos-section {
+      width: 350px; 
+      margin-left: 40px;  
+    }    
+
+    .botao-servicos button {
+      margin: 30px 35px 0 0;
+      float: right;
+    }    
+}
+    .jobs {
+        margin-top: 100px;
+
+    
+    .jobs-text {
+      width: 345px; 
+      margin-left: -285px;  
+      font-size: 18px;
+    }    
+
+    .botao-jobs button {
+      margin-left: 235px;
+    }    
+
+    .contato {
+      margin-top: 497px;
+    }    
+
+    .contato-section {
+      width: 350px; 
+      margin-left: 40px;        
+    }    
+
+    .texto-contato {
+        width: 345px;
+        margin-left: -285px;
+        font-size: 18px;        
+    }    
+
+    input {        
+        margin: 20px 0 0 15px;       
+    }    
+
+    .input-form {
+        width: 340px;       
+        font-size: 18px;      
+    }    
+
+    .textarea {
+        width: 340px;       
+        font-size: 18px; 
+        margin: 20px 0 0 15px; 
+        height: 100px;    
+    }    
+
+    .botao-form button {
+      margin: 30px 35px 0 0;
+      float: right;
+    }    
+
+    .news {
+        font-size: 18px; 
+        margin: 90px 0 0 15px; 
+    }    
+
+    .news-text {
+        width: 330px;
+        font-size: 18px; 
+        margin: 20px 0 0 15px; 
+    }    
+
+    .newsletter {
+        width: 200px;
+        height: 25px;
+        font-size: 16px; 
+        margin: 20px 0 0 15px; 
+    }    
+
+    .botao-newsletter{
+      margin-left: 235px;
+      width: 100px;
+      margin: -25px 40px 0 0;
+    }    
+
+    .cultura{
+        margin-top: 50px;
+    }    
+
+    .cultura-section{
+        margin-left: 40px;
+    }    
+
+    .cultura-text {
+      width: 335px; 
+      margin-left: -285px;  
+      font-size: 18px;
+    }    
+
+    .saiba-mais{
+      margin-left: 235px;
+    }    
+
+    .vagas{
+        margin-top: 60px;
+    }
+    .vagas-section {
+        width: 350px; 
+        margin-left: 40px;        
+      }
+        
+}
+
+@media (max-width: 999px){
+    .opcoes-vagas {
+        width: 200px;
+        height: 25px;
+        font-size: 16px; 
+        margin: 20px 0 0 15px; 
+    }    
+
+    .tipo-vaga {
+        margin: 20px 0 0 15px;
+        width: 340px;
+        height: 40px; 
+    }    
+
+    .tipo-area {
+        margin: 20px 0 0 15px;
+        width: 340px;
+        height: 40px; 
+    }    
+
+    .planilha-vagas {
+        width: 200px;
+        height: 25px;
+        font-size: 16px; 
+        margin: 20px 0 0 15px; 
+    }    
+
+    table {
+        width: 300px;
+        height: 25px;
+        font-size: 16px; 
+        margin: 20px 0 0 15px; 
+    }    
+
+    .coluna-oportunidades {
+        width: 200px;
+        height: 25px;
+        font-size: 16px; 
+        margin: 20px 0 0 15px; 
+    }    
+
+    .coluna-numero-vagas {
+        width: 200px;
+        height: 25px;
+        font-size: 16px; 
+        margin: 20px 0 0 15px; 
+    }    
+
+    .coluna-tipo-vagas {
+        width: 200px;
+        height: 25px;
+        font-size: 16px; 
+        margin: 20px 0 0 15px; 
+    }    
+
+    .option {
+        width: 200px;        
+    }    
+
+    footer {
+        margin-top: 200px;       
+    }    
+
+    address {
+        margin-top: 0px;  
+        font-size: 16px;      
+    }    
+}
+
+@media (max-width: 375px){
+
+    .cultura-container{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 40px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}*/
