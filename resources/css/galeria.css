@@ -1,4 +1,4 @@
-
+/*
 .wg1{
     grid-column: span 1;
 }
@@ -107,4 +107,4 @@ div.single-galeria:hover div.overflow{
         grid-auto-rows: calc(45vh / 2);
         width: 100%;
     }
-}
+}*/

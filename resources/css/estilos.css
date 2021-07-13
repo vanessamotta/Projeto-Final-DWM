@@ -9,9 +9,145 @@ body {
     background-color: #fff;
   }
 
+/*--------------------------------------*/
+/*-------------carrossel----------------*/
+/*------------------------------------*/
+ 
+.gallery {
+    position: absolute;
+    top: 15%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 90%;
+    max-height: 28vw;
+    overflow: hidden;
+    margin-top: 200px;
+    display: inline-block; 
+    align-items: center;
+  }
+
+  .gallery__stream {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 100%;
+  }
+  
+  .gallery__item {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    transition: 1s all ease;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 5px;
+  }
+
+  /* Itens */
+
+.gallery__item:nth-child(1) {
+    left: 0;
+    z-index: 1;
+    transform: translateX(-100%) scale(.8);
+  }
+  
+  .gallery__item:nth-child(2) {
+    left: 0;
+    z-index: 2;
+    transform: translateX(-50%) scale(.8);
+  }
+  
+  .gallery__item:nth-child(3) {
+    left: 50%;
+    z-index: 4;
+    transform: translateX(-50%) scale(1);
+  }
+
+  .gallery__item:nth-child(4) {
+    left: 100%;
+    z-index: 2;
+    transform: translateX(-50%) scale(.8);
+  }
+  
+  .gallery__item:nth-child(n+5) {
+    left: 100%;
+    z-index: 1;
+    transform: scale(.8);
+  }
+  
+  
+  /* Backgrounds */
+
+.bg-1 {
+    background-image: url(img/carrossel-06.jpg);
+  }
+.bg-2 {
+    background-image: url(img/carrossel-07.jpg);
+}  
+.bg-3 {
+    background-image: url(img/carrossel-08.jpg);
+}
+
+.bg-4 {
+    background-image: url(img/carrossel-09.jpg);
+}
+
+.bg-5 {
+    background-image: url(img/carrossel-10.jpg);
+}
+
+/* Controles */
+
+.gallery__prev,
+.gallery__next {
+  position: absolute;
+  top: 50%;
+  z-index: 4;
+  width: 50%;
+  height: 100%;
+  transform: translateX(-50%) translateY(-50%) scale(.8);
+  cursor: pointer;
+}
+
+.gallery__prev {
+  left: 0;
+}
+
+.gallery__next {
+  left: 100%;
+}
+
+/* Sombras */
+
+.gallery:before,
+.gallery:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 20%;
+  height: 100%;
+  z-index: 3;
+}
+
+.gallery:before {
+  left: 0;
+  background:  linear-gradient(to right, rgba(189,98,233,1) 0%, rgba(194,114,183,0) 100%);
+}
+
+.gallery:after {
+  right: 0;
+  background:  linear-gradient(to left, rgba(189,98,233,1) 0%, rgba(0,0,0,0) 100%);
+}
+
+
+
+
 
 /*--------------------------------------*/
-/*-------------SERVIÇOS----------------*/
+/*-------------serviços----------------*/
 /*------------------------------------*/
 
 .linhadecorativa{
@@ -40,7 +176,6 @@ body {
     margin: 15px 150px 0 0;
     float: right;
 }
-
 
 
 /*--------------------------------------*/
@@ -443,8 +578,6 @@ table{
 }
 
 
-
-
 /*--------------------------------------*/
 /*-----------analista.html-------------*/
 /*------------------------------------*/
@@ -511,7 +644,6 @@ table{
     float: right;    
 }
 
-
 .planilha-analista{
     margin: 50px 0 0 309px;
     width: 900px;
@@ -556,12 +688,8 @@ table{
     color: #707070;        
 }
 
-
-
-
-
 /*--------------------------------------*/
-/*--------------footer=----------------*/
+/*--------------footer-----------------*/
 /*------------------------------------*/
 
 footer{
@@ -603,217 +731,309 @@ address{
     text-align: center;
 }
 
-/*
-footer p{
-    text-align: center;
-    margin-top: 10px;
-}
-.rodape{
-    width: 420px;
-}*/
-
-
 /*--------------------------------------*/
 /*--------------media query------------*/
 /*------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------*/
+/*----------------IPAD-----------------*/
+/*------------------------------------*/
+@media only screen and (max-width: 768px) {
 
-/*@media (max-width: 999px){
-    .linhadecorativa {
-      margin-left: 0px;
-    }    
-    .servicos {
-      margin-top: 150px;
-    }    
-    .servicos-section {
-      width: 350px; 
-      margin-left: 40px;  
-    }    
-
-    .botao-servicos button {
-      margin: 30px 35px 0 0;
-      float: right;
-    }    
-}
-    .jobs {
-        margin-top: 100px;
-
-    
-    .jobs-text {
-      width: 345px; 
-      margin-left: -285px;  
-      font-size: 18px;
-    }    
-
-    .botao-jobs button {
-      margin-left: 235px;
-    }    
-
-    .contato {
-      margin-top: 497px;
-    }    
-
-    .contato-section {
-      width: 350px; 
-      margin-left: 40px;        
-    }    
-
-    .texto-contato {
-        width: 345px;
-        margin-left: -285px;
-        font-size: 18px;        
-    }    
-
-    input {        
-        margin: 20px 0 0 15px;       
-    }    
-
-    .input-form {
-        width: 340px;       
-        font-size: 18px;      
-    }    
-
-    .textarea {
-        width: 340px;       
-        font-size: 18px; 
-        margin: 20px 0 0 15px; 
-        height: 100px;    
-    }    
-
-    .botao-form button {
-      margin: 30px 35px 0 0;
-      float: right;
-    }    
-
-    .news {
-        font-size: 18px; 
-        margin: 90px 0 0 15px; 
-    }    
-
-    .news-text {
-        width: 330px;
-        font-size: 18px; 
-        margin: 20px 0 0 15px; 
-    }    
-
-    .newsletter {
-        width: 200px;
-        height: 25px;
-        font-size: 16px; 
-        margin: 20px 0 0 15px; 
-    }    
-
-    .botao-newsletter{
-      margin-left: 235px;
-      width: 100px;
-      margin: -25px 40px 0 0;
-    }    
-
-    .cultura{
-        margin-top: 50px;
-    }    
-
-    .cultura-section{
-        margin-left: 40px;
-    }    
-
-    .cultura-text {
-      width: 335px; 
-      margin-left: -285px;  
-      font-size: 18px;
-    }    
-
-    .saiba-mais{
-      margin-left: 235px;
-    }    
-
-    .vagas{
-        margin-top: 60px;
-    }
-    .vagas-section {
-        width: 350px; 
-        margin-left: 40px;        
-      }
-        
+header a{
+    font-size: 23px;
 }
 
-@media (max-width: 999px){
-    .opcoes-vagas {
-        width: 200px;
-        height: 25px;
-        font-size: 16px; 
-        margin: 20px 0 0 15px; 
-    }    
+.nav-list{
 
-    .tipo-vaga {
-        margin: 20px 0 0 15px;
-        width: 340px;
-        height: 40px; 
-    }    
-
-    .tipo-area {
-        margin: 20px 0 0 15px;
-        width: 340px;
-        height: 40px; 
-    }    
-
-    .planilha-vagas {
-        width: 200px;
-        height: 25px;
-        font-size: 16px; 
-        margin: 20px 0 0 15px; 
-    }    
-
-    table {
-        width: 300px;
-        height: 25px;
-        font-size: 16px; 
-        margin: 20px 0 0 15px; 
-    }    
-
-    .coluna-oportunidades {
-        width: 200px;
-        height: 25px;
-        font-size: 16px; 
-        margin: 20px 0 0 15px; 
-    }    
-
-    .coluna-numero-vagas {
-        width: 200px;
-        height: 25px;
-        font-size: 16px; 
-        margin: 20px 0 0 15px; 
-    }    
-
-    .coluna-tipo-vagas {
-        width: 200px;
-        height: 25px;
-        font-size: 16px; 
-        margin: 20px 0 0 15px; 
-    }    
-
-    .option {
-        width: 200px;        
-    }    
-
-    footer {
-        margin-top: 200px;       
-    }    
-
-    address {
-        margin-top: 0px;  
-        font-size: 16px;      
-    }    
 }
 
-@media (max-width: 375px){
+.logo{
+    font-size: 30px;
+}
 
-    .cultura-container{
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 100%;
-        padding: 40px;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}*/
+.gallery{
+    height: 24%;
+    max-height: 34vw;
+    margin-top: 60px;
+}
+
+.servicos{
+    margin-top:330px;
+}
+
+.linhadecorativa{
+    margin-left: 70px;
+}
+
+.servicos-section{
+    margin: -26px 0 0 113px;
+}
+
+.cultura{
+    margin-top: 113px;
+}
+
+.cultura-section{
+    margin: -26px 0 0 113px;
+}
+.cultura-article{
+    margin-left: 113px;
+    width: 70%;
+}
+
+.cultura-container{
+    margin: 20px 0 0 113px;
+    width: 35%;
+}
+.saiba-mais{
+    margin: 15px 150px 0;
+}
+.div-video{
+    margin: 106px 0 0 40px;
+}
+
+iframe{
+    width: 88%;
+    height: 349px;
+}
+
+.depoimentos h2{
+    margin: -26px 0 0 113px;
+}
+.cards-depoimento{
+    margin: 30px;
+    margin-top: 10px;
+    grid-gap: 18px;
+
+}
+.div-depo{
+    width: 97%;
+}
+.card{
+    padding: 50px 4px;
+}
+.blockquote{
+    padding: 0 10px 0 10px;
+}
+.contato-section{
+    margin: -26px 0 0 113px;
+}
+.contato-article{
+    margin-left: 113px;
+}
+#form-contato .input-form {
+    margin: 3px 0 10px 113px;
+    width: 70%;
+}
+.textarea{
+    margin: 20px 0 0 113px;
+    width: 70%;
+}
+.botao-form button {
+    margin: 15px 113px 0 0;
+}
+.news{
+    margin: 142px 0 0 113px;
+    width: 70%;
+}
+.news-text{
+    margin: 10px 0 0 113px;
+}
+.form-container{
+    margin-left: 100px;
+    flex-wrap: wrap;
+    width: 80%;
+}
+.form-container div{
+    padding-top: 20px;
+}
+
+.newsletter{
+    width: 90%;
+    height: 60px;
+}
+
+footer{
+    background-image: url(img/footer3-01.png);
+    background-size: cover;
+}
+.footer-container{
+    margin-left: 17.5%;
+}
+address {
+    font-size: 25px;
+}
+.direitos-autorias{
+    font-size: 20px;
+}
+}
+/*---------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------*/
+/*------------IPHONE 6/7/8-------------*/
+/*------------------------------------*/
+
+@media only screen and (max-width: 375px) {
+nav{
+    width: 100%;
+}
+.mobile-menu{
+    margin-right: 0;
+}
+.servicos{
+    margin-top: 211px;
+}
+.linhadecorativa{
+    margin-left: 5px;
+}
+.servicos-section{
+    margin: -26px 0 0 46px;
+    font-size: 20px;
+}
+.botao-servicos button{
+    margin: 20px 128px 0 0;
+}
+.cultura-section{
+    margin: -26px 0 0 46px;
+    font-size: 20px;
+}
+.cultura-article{
+    margin-left: 46px;
+    width: 82%;
+}
+.cultura-text{
+    font-size: 16px;
+}
+.cultura-container{
+    margin: 20px 0 0 46px;
+    width: 75%;
+}
+.saiba-mais{
+    margin: 30px 128px 0 0;
+}
+.div-video {
+    margin: 119px 0 0 15px;
+}
+iframe {
+    width: 96%;
+    height: 187px;
+}
+.depoimentos h2 {
+    margin: -26px 0 0 46px;
+    font-size: 20px;
+}
+.cards-depoimento{
+    grid-template-columns: none;
+    margin-right: 10px;
+}
+.depoimentos{
+    margin-top: 50px;
+}
+
+.card {
+    padding: 4px 4px;
+}
+.contato-section {
+    margin: -26px 0 0 46px;
+    font-size: 20px;
+}
+.contato-article {
+    margin-left: 46px;
+    width: 80%;
+}
+.texto-contato{
+    font-size: 16px;
+}
+#form-contato .input-form {
+    margin: 3px 0 10px 14px;
+    width: 93%;
+    height: 44px;
+    font-size: 16px;
+}
+.textarea {
+    margin: 3px 0 10px 14px;
+    width: 93%;
+    font-size: 16px;
+    height: 133px;
+}
+.news {
+    margin: 134px 0 0 14px;
+    width: 93%;
+}
+.news-text {
+    margin: 10px 0 0 34px;
+    font-size: 16px;
+    width: 80%;
+}
+.form-container {
+    margin-left: 17px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.newsletter {
+    width: 88%;
+    height: 46px;
+}
+.form-container div {
+    padding-top: 20px;
+    padding-left: 97px;
+}
+footer {
+    background-image: url(img/footer4-01.png);
+    background-size: cover;
+    height: 430px;
+}
+.footer-container {
+    margin: 67px;
+}
+.footer-item{
+    padding: 9px;
+}
+
+address {
+    font-size: 16px;
+}
+.direitos-autorias {
+    font-size: 12px;
+}
+
+}
+
+/*---------------------------------------------*/
+/*--------------media query-VAGAS HTML------------*/
+/*-----------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------*/
+/*----------------IPAD-----------------*/
+/*------------------------------------*/
+@media only screen and (max-width: 768px) {
+.jobs-section{
+    margin: -26px 0 0 113px;
+}
+.jobs-article {
+    width: 79%;
+    margin-left: 113px;
+}
+.vagas-section{
+    margin: -26px 0 0 113px;
+}
+
+.tipo-vaga{
+    margin: 20px 0 0 113px;
+    width: 85%;
+}
+.tipo-area{
+    margin: 20px 0 0 113px;
+    width: 85%;
+}
+
+.planilha-vagas {
+    margin: 50px 0 0 128px;
+    width: 80%;
+}
+.galeria{
+    margin-left: 50px;
+    width: 759px;
+}
+
+}
