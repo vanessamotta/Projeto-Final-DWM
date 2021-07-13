@@ -31,61 +31,17 @@
         <div class="line3"></div>
       </div>
       <ul class="nav-list" style="z-index: 4;">
-        <li><a href="index.html#servicos1">Serviços</a></li>
-        <li><a href="index.html#jobs1">Jobs</a></li>
-        <li><a href="index.html#contato1">Contato</a></li>
-        <li><a href="index.html#cultura1">Cultura</a></li>
-        <li><a href="index.html#vagas1">Vagas</a></li>
+        <li><a href="index.html#servicos1" target="blank">Serviços</a></li>
+        <li><a href="index.html#cultura1" target="blank">Cultura</a></li>
+        <li><a href="index.html#depoimentos" target="blank">Depoimentos</a></li>
+        <li><a href="index.html#contato1" target="blank">Contato</a></li>
+        <li><a href="vagas.html#jobs1">Jobs</a></li>
+        <li><a href="vagas.html#vagas1">Vagas</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <!-------------------------------->
-    <!-----------serviços------------->
-    <!-------------------------------->
-    <section id="servicos1">
-      <div class="servicos">
-        <img class="linhadecorativa" src="resources/css/img/linha2.png" alt="linha decorativa roxa">
-        <h2 class="servicos-section">Serviços que oferecemos</h2>
-      </div>
-      <div class="item">
-        <input type="checkbox" id="check1">
-        <label for="check1">Design Digital</label>
-        <ul>
-          <li><a href="#">CX / UX / UI design</a></li>
-          <li><a href="#">Estratégia digital</a></li>
-          <li><a href="#">Research</a></li>
-          <li><a href="#">Jornada do usuário</a></li>
-          <li><a href="#">Pesquisas com usuários</a></li>
-        </ul>
-      </div>
-      <div class="item">
-        <input type="checkbox" id="check2">
-        <label for="check2">Softwares e Operações de TI</label>
-        <ul>
-          <li><a href="#">Estratégia de tecnologia e arquitetura de software</a></li>
-          <br>
-          <li><a href="#">Desenvolvimento de software customizado</a></li>  
-          <br>
-          <li><a href="#">Operações de TI</a></li>
-        </ul>
-      </div>
-      <div class="item">
-        <input type="checkbox" id="check3">
-        <label for="check3">Tecnologia e Inovação</label>
-        <ul>
-          <li><a href="#">Aceleração de produtos digitais</a></li>
-          <li><a href="#">Novos modelos de negócio</a></li>
-          <li><a href="#">Validação de mercado</a></li>
-          <li><a href="#">Pilotos</a></li>
-          <li><a href="#">Culturalização para inovação</a></li>
-        </ul>
-      </div>       
-      <div class="botao">
-        <a class="botao-servicos" href="#"><button>Saiba mais</button></a>
-      </div>
-    </section> 
-
+   
     <!-------------------------------->
     <!-----------jobs----------------->
     <!-------------------------------->
@@ -139,6 +95,83 @@
         </div>
         
     </section>
+    
+     <!-------------------------------->
+    <!-----------vagas---------------->
+    <!-------------------------------->
+    <section id="vagas1">
+      <div class="vagas">
+        <img class="linhadecorativa" src="resources/css/img/linha2.png" alt="linha decorativa ROXA">
+        <h2 class="vagas-section">Vagas</h2>
+      </div>
+
+      <select class="tipo-vaga">
+        <option class="vaga-option" value="vaga"> Tipo de vaga</option> 
+        <option class="vaga-option" value="estagio"> Estágio</option> 
+        <option value="temporario"> Temporário</option> 
+        <option value="clt"> CLT</option> 
+        <option value="pj"> PJ</option> 
+        <option value="presencial"> Presencial</option> 
+        <option value="remoto"> Remoto</option> 
+      </select>
+
+      <select class="tipo-area">
+        <option value="rh"> Recursos Humanos</option> 
+        <option value="financeiro"> Financeiro</option> 
+        <option value="desenvolvimento"> Desenvolvimento</option> 
+        <option value="recepção"> Recepção</option> 
+        <option value="compras"> Compras</option>         
+      </select>
+         
+      <div class="planilha-vagas">
+        <table>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="coluna-oportunidades"><a href="analista.html" target="blank">Analista de RH</a></td>
+            <td class="coluna-numero-vagas">1</td>
+            <td class="coluna-tipo-vaga">Efetivo</td>
+          </tr>
+          <tr>
+            <td class="coluna-oportunidades">Psicóloga</td>
+            <td class="coluna-numero-vagas">3</td>
+            <td class="coluna-tipo-vaga">Efetivo</td>
+          </tr>
+          <tr>
+            <td class="coluna-oportunidades">Facilidatora TI</td>
+            <td class="coluna-numero-vagas">5</td>
+            <td class="coluna-tipo-vaga">Efetivo</td>
+          </tr>
+          <tr>
+            <td class="coluna-oportunidades">Designer</td>
+            <td class="coluna-numero-vagas">3</td>
+            <td class="coluna-tipo-vaga">Efetivo</td>
+          </tr>
+          <tr>
+            <td class="coluna-oportunidades">UX Designer</td>
+            <td class="coluna-numero-vagas">4</td>
+            <td class="coluna-tipo-vaga">Estágio</td>
+          </tr>
+          <tr>
+            <td class="coluna-oportunidades">UI Designer</td>
+            <td class="coluna-numero-vagas">4</td>
+            <td class="coluna-tipo-vaga">Estágio</td>
+          </tr>
+          <tr>
+            <td class="coluna-oportunidades">Desenvolvedor</td>
+            <td class="coluna-numero-vagas">5</td>
+            <td class="coluna-tipo-vaga">Estágio</td>
+          </tr>
+          
+        </table>
+      </div>
+    </section>
+
+
+
   </main>
 
   <footer>
