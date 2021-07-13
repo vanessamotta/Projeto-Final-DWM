@@ -7,7 +7,6 @@
 .cards-depoimento{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-
     max-width: 980px;
     margin: 0 auto;
     grid-gap: 40px
@@ -18,9 +17,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
     padding: 35px 40px;
-
     box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.123) ;
 }
 
